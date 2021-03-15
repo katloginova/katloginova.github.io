@@ -1,0 +1,32 @@
+main .describe ol{
+    padding-left: 50px;
+}
+
+main .describe .describe-box{
+    vertical-align: top;
+    padding-top: 50px;
+}
+
+main .describe .describe-box ul>li+li{
+    padding-top: 75px;
+}
+
+.span-green{
+    color: green;
+    font-weight: normal;
+}
+
+#box{
+    vertical-align: top;
+    padding-top: 50px;
+    padding-left: 40px;
+}
+
+main .describe .describe-table .cell .prop-border{
+    width: 150px;
+}
+
+main .describe .describe-table .cell .prop-border td{
+    border: none;
+    text-align: left;
+}

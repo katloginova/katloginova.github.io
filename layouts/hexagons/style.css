@@ -1,0 +1,154 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    width: 1400px;
+    padding: 0 50px;
+    margin: 0 auto;
+}
+.content{
+    position: relative;
+    height: 800px;
+    margin: 0 auto;
+    font-size: 0;
+    line-height: 0;
+}
+
+.text{
+    padding-top: 200px;
+    padding-left: 75px;
+}
+
+.text .line-text{
+    font-size: 100px;
+    line-height: 100px;
+    font-weight: 600;
+    color: #fff;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    text-shadow: 5px 3px 6px #333;
+}
+
+.line-text:first-child{
+    text-align: left;
+}
+
+.line-text:not(:first-child, :last-child){
+    text-align: center;
+}
+
+.line-text:last-child{
+    text-align: right;
+}
+
+.hexagon{
+    position: absolute;
+    left: 150px;
+    width: 150px;
+    height: 90px;
+    margin: 0 2px;
+    background-color: #882222;
+    z-index: -1;
+}
+
+.hexagon::after{
+    content: '';
+    position: absolute;
+    bottom: 100%;
+    width: 0;
+    height: 0;
+    border-left: 75px solid transparent;
+    border-right: 75px solid transparent;
+    border-bottom: 40px solid #882222;
+}
+
+.hexagon::before{
+    content: '';
+    position: absolute;
+    top: 100%;
+    width: 0;
+    height: 0;
+    border-left: 75px solid transparent;
+    border-right: 75px solid transparent;
+    border-top: 40px solid #882222;
+}
+
+.line-1{
+    position: absolute;
+    top: calc(50% - 65px);
+}
+
+.line-2{
+    position: absolute;
+    top: calc((50% - 65px) - 130px - 2px);
+    left: calc(75px + 1px);
+}
+
+.line-3{
+    position: absolute;
+    top: calc((50% - 65px) - 130px - 130px - 2px - 2px);
+    left: calc(75px + 75px + 1px + 1px);
+}
+
+.line-4{
+    position: absolute;
+    top: calc((50% - 65px) + 130px + 2px);
+    left: calc(75px + 150px + 150px + 1px + 2px + 2px);
+}
+
+.line-5{
+    position: absolute;
+    top: calc((50% - 65px) + 130px + 130px + 2px + 2px);
+    left: calc(150px + 150px + 150px + 150px + 150px + 2px + 2px + 2px + 2px + 2px);
+}
+
+.color-1{
+    background-color: #771010;
+}
+
+.color-1::after{
+    border-bottom: 40px solid #771010;
+}
+
+.color-1::before{
+    border-top: 40px solid #771010;
+}
+
+.color-2{
+    background-color: #551010;
+}
+
+.color-2:after{
+    border-bottom: 40px solid #551010;
+}
+
+.color-2::before{
+    border-top: 40px solid #551010;
+}
+
+.color-3{
+    background-color: #331010;
+}
+
+.color-3:after{
+    border-bottom: 40px solid #331010;
+}
+
+.color-3::before{
+    border-top: 40px solid #331010;
+}
+
+.color-4{
+    background-color: #994444;
+}
+
+.color-4:after{
+    border-bottom: 40px solid #994444;
+}
+
+.color-4::before{
+    border-top: 40px solid #994444;
+}

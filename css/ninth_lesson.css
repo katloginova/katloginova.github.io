@@ -1,0 +1,26 @@
+main{
+    display: table;
+}
+
+main .leftbar{
+    display: table-cell;
+}
+
+main .content{
+    display: table-cell;
+}
+
+.leftbar{
+    width: 30%;
+    vertical-align: top;
+}
+
+.leftbar img{
+    width: 100%;
+}
+
+.leftbar ul{
+    padding: 25px 20px;
+    line-height: 35px;
+    font-size: 20px;
+}

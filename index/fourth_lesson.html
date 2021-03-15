@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Четвертый урок</title>
+    <link rel="stylesheet" href="../css/style.css">
+
+
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="head">
+                <div class="logo">
+                    <div class="logo-img"></div>
+                    <h1>Курс Front-end</h1>
+                </div>
+                <h2>Четвертый урок</h2>
+            </div>
+
+            <nav>
+                <a href="../index.html">главная</a>
+                <a href="targets.html">мои цели</a>
+                <a href="layouts.html">макеты</a>
+            </nav>
+        </header>
+
+        <main>
+            <table>
+                <tr>
+                    <td class="leftbar" >
+                        <img src="../img/main/foto.jpg" alt="foto">
+                        <ul>
+                            <li><a href="first_lesson.html">первый урок</a></li>
+                            <li><a href="second_lesson.html">второй урок</a></li>
+                            <li><a href="third_lesson.html">третий урок</a></li>
+                            <li><a href="#">четвертый урок</a></li>
+                            <li><a href="fifth_lesson.html">пятый урок</a></li>
+                            <li><a href="sixth_lesson.html">шестой урок</a></li>
+                            <li><a href="seventh_lesson.html">седьмой урок</a></li>
+                            <li><a href="eighth_lesson.html">восьмой урок</a></li>
+                            <li><a href="ninth_lesson.html">девятый урок</a></li>
+
+                        </ul>
+                    </td>
+                    <td class="describe">
+                       <h3>Блочная модель в CSS</h3>
+                       <p>CSS свойство <span>box-sizing</span> используется для изменения, применяемой по умолчанию CSS модели, с помощью которой вычисляются ширина и высота элементов. Значения свойства существуют следующие:</p>
+                        <ol>
+                            <li>content-box (по умолчанию)</li>
+                            <li>border-box</li>
+                            <li>initial (устанавливает свойство в значение по умолчанию)</li>
+                            <li>inherit (указывает, что значение наследуется от родительского элемента)</li>
+                        </ol>
+                        <p><span>margin</span> - наружный отступ элемента (за границей). Если у родителя элемента не задан <span>padding-top</span>, то <span>margin-top</span> у ро дителя и самого элемента выбирается иаксимальный из всех. <span>padding</span> - внутренний отступ элемента (между контентом о границей)</p>
+                        <p>Свойство со значением <span>margin: 0 auto;</span> если элемент блочный выравнивает его по середине, а если же элемент строчно-блочный значение <span>auto</span> не работает.</p>
+                       <table>
+                           <tr>
+                               <td class="describe-box">
+                                   <ul>
+                                       <li>При использовании значения <span>content-box</span>, значения свойства <span class="span-green">width</span> и <span class="span-green">height</span>, а так же <span class="span-green">min-width</span>, <span class="span-green">max-width</span>, <span class="span-green">min-height</span> и <span class="span-green">max-height</span> включают в себя только содержание элемента. Такие свойства как <span class="span-green">border</span>, <span class="span-green">padding</span> (внутренние отступы) или <span class="span-green">margin</span> (внешние) отступы не входят.</li>
+                                       <li>При использовании значения <span>border-box</span> значения свойства <span class="span-green">width</span> и <span class="span-green">height</span>, а так же <span class="span-green"> min-width</span>, <span class="span-green">max-width</span>, <span class="span-green">min-height</span> и <span class="span-green">max-height</span> включают в себя содержание элемента, <span class="span-green">border</span> и <span class="span-green">padding</span> (внутренние отступы). А <span class="span-green">margin</span>  (внешние отступы), как и при использовании <span>content-box</span> в это число не входят.</li>
+                                   </ul>
+                               </td>
+                               <td id="box"><img src="../img/concpect/lesson4/box.png" alt="box"></td>
+                           </tr>
+
+                           <tr>
+                                <td colspan="2">
+                                    <div class="describe-table">
+                                        <table>
+                                            <tr class="cell table-head">
+                                                <th id="property">Свойство</th>
+                                                <th id="value">Значение</th>
+                                                <th>Описание</th>
+                                            </tr>
+                                            <tr class="cell">
+                                                <td>border-width</td>
+                                                <td>px</td>
+                                                <td>ширина границы (top, right, bottom, left)</td>
+                                            </tr>
+                                            <tr class="cell">
+                                                <td>border-style</td>
+                                                <td>none, hidden, dotted, dashed, solid, double, groove, ridge, inset, outset</td>
+                                                <td>стиль границы</td>
+                                            </tr>
+                                            <tr class="cell">
+                                                <td>border-color</td>
+                                                <td>green, #код(rgb), hsl(0, 100%, 50%), hsla(0, 100%, 50%, 0.5)</td>
+                                                <td>цвет границы</td>
+                                            </tr>
+                                            <tr class="cell">
+                                                <td>
+                                                    <table class="prop-border">
+                                                        <tr>
+                                                            <td rowspan="4">border</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>-top</td>
+                                                            <td>-width</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>-right</td>
+                                                            <td>-style</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>-bottom</td>
+                                                            <td>-color</td>
+                                                        </tr>
+                                                    </table>
+                                                </td>
+                                                <td>px цвет стиль(из свойств border-width или -style)</td>
+                                                <td>задается одной границе</td>
+                                            </tr>
+                                            <tr class="cell">
+                                                <td rowspan="4">display</td>
+
+                                            </tr>
+                                            <tr class="cell">
+                                                <td>inline</td>
+                                                <td>элементы располагаются на той же строке, последовательно, ширина и высота элемента определяются по содержимому (поменять их нельзя)</td>
+                                            </tr>
+                                            <tr class="cell">
+                                                <td>inline-block</td>
+                                                <td>располагается в строке, размер устанавливается по содержимому, во всём остальном – это блок (работают свойства <span class="span-green">width</span> / <span class="span-green">height</span>)</td>
+                                            </tr>
+                                            <tr class="cell">
+                                                <td>block</td>
+                                                <td>блочные элементы располагаются один над другим, вертикально. Блок стремится расшириться на всю доступную ширину (можно указать ширину и высоту явно)</td>
+                                            </tr>
+ 
+
+                                        </table>
+                                    </div>
+                                </td>
+                           </tr>
+                       </table>
+
+                    </td>
+                </tr>
+            </table>
+        </main>
+
+        <footer>
+            Логинова Екатерина &copy
+        </footer>
+    </div>
+</body>
+</html>

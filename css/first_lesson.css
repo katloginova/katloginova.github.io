@@ -1,0 +1,17 @@
+main .describe-first{
+    text-align: center;
+}
+
+main .lesson{
+    line-height: 40px;
+}
+
+main .lesson h3{
+    line-height: unset;
+    text-decoration: unset;
+}
+
+main .lesson img{
+    width: 100px;
+}
+

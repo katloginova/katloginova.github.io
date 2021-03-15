@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Третий урок</title>
+    <link rel="stylesheet" href="../css/style.css">
+
+
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="head">
+                <div class="logo">
+                    <div class="logo-img"></div>
+                    <h1>Курс Front-end</h1>
+                </div>
+                <h2>Третий урок</h2>
+            </div>
+
+            <nav>
+                <a href="../index.html">главная</a>
+                <a href="targets.html">мои цели</a>
+                <a href="layouts.html">макеты</a>
+            </nav>
+        </header>
+
+        <main>
+            <table>
+                <tr>
+                    <td class="leftbar" >
+                        <img src="../img/main/foto.jpg" alt="foto">
+                        <ul>
+                            <li><a href="first_lesson.html">первый урок</a></li>
+                            <li><a href="second_lesson.html">второй урок</a></li>
+                            <li><a href="#">третий урок</a></li>
+                            <li><a href="fourth_lesson.html">четвертый урок</a></li>
+                            <li><a href="fifth_lesson.html">пятый урок</a></li>
+                            <li><a href="sixth_lesson.html">шестой урок</a></li>
+                            <li><a href="seventh_lesson.html">седьмой урок</a></li>
+                            <li><a href="eighth_lesson.html">восьмой урок</a></li>
+                            <li><a href="ninth_lesson.html">девятый урок</a></li>
+
+                        </ul>
+                    </td>
+                    <td class="describe" >
+                       <h3>Мое первое использование CSS стилей для создания сайта </h3>
+                       <table>
+                           <tr>
+                               <td>
+                                   <p>Назначение CSS – отделять то, что задает внешний вид страницы, от ее содержания. Если документ создан только с использованием HTML, то в нем определяется не только каждый элемент, но и способ его отображения. Если же подключены каскадные таблицы стилей, то HTML описывает только очередность объектов. А за все их свойства отвечает CSS.</p>
+                                   <p> Для того, чтобы задать стиль какому-нибудь элементу необходимо к нему как-то обратиться. И для этого существуют несколько способов обращения:</p>
+                                   <ul>
+                                        <li>* - для всей страницы;</li>
+                                        <li>.classname - для элементов, имеющих данный класс;</li>
+                                        <li>#id - уникальный код (используется в коде документа только один раз);</li>
+                                        <li>tagname - для тегов</li>
+                                    </ul>
+                                    <p>Часто используемые способы обращения в CSS к атрибутам:</p>
+                                    <ul>
+                                        <li><span>div>span</span> - прямая вложенность</li>
+                                        <li><span>div, span</span> - или <span>div</span>, или <span>span</span></li>
+                                        <li><span>div span</span> - любая вложенность</li>
+                                        <li><span>div+span</span> - <span>span</span> идет сразу после <span>div</span></li>
+                                        <li>есть еще другие способы</li>
+                                    </ul>
+                                    
+
+                               </td>
+                               <td id="rule"><img src="../img/concpect/lesson3/css_rule.png" alt="css"></td>
+                           </tr>
+                           <tr>
+                                <td colspan="2">
+                                    <div class="describe-table">
+                                        <table>
+                                            <tr class="cell table-head">
+                                                <th id="property">Свойство</th>
+                                                <th id="value">Значение</th>
+                                                <th>Описание</th>
+                                            </tr>
+                                            <tr class="cell">
+                                                <th colspan="3">Стилизация текста</th>
+                                            </tr>
+                                            <tr class="cell">
+                                                <td>font-family</td>
+                                                <td>имя шрифта</td>
+                                                <td>задает список шрифтов</td>
+                                            </tr>
+                                            <tr class="cell">
+                                                <td>font-style</td>
+                                                <td>normal, italic, oblique</td>
+                                                <td>нормальный шрифт, курсив, наклонный шрифт</td>
+                                            </tr>
+                                            <tr class="cell">
+                                                <td>font-size</td>
+                                                <td>px, pt, em, vw, vh, %</td>
+                                                <td>размер шрифта (em = 4/3px, vw и vh - размеры в процентном соотношении от ширины и высоты экрана соответственно)
+                                                </td>
+                                            </tr>
+                                            <tr class="cell">
+                                                <td>font-weight</td>
+                                                <td>normal, lighter, bold, bolder, 100–900</td>
+                                                <td>жирность шрифта</td>
+                                            </tr>
+                                            <tr class="cell">
+                                                <td>color</td>
+                                                <td>green, #код(rgb), hsl(0, 100%, 50%), hsla(0, 100%, 50%, 0.5)</td>
+                                                <td>задается цвет шрифта</td>
+                                            </tr>
+                                            <tr class="cell">
+                                                <td>text-decoration</td>
+                                                <td>none, overline, underline, line throw</td>
+                                                <td>делает текст подчеркнутым, надчеркнутым, зачеркнутым</td>
+                                            </tr>
+                                            <tr class="cell">
+                                                <td>text-indent</td>
+                                                <td>px, pt, em</td>
+                                                <td>абзац</td>
+                                            </tr>
+                                            <tr class="cell">
+                                                <td>line-height</td>
+                                                <td>px, pt, em</td>
+                                                <td>высота строки (текст расположен по средине строки)</td>
+                                            </tr>
+                                            <tr class="cell">
+                                                <td>letter-spacing</td>
+                                                <td>px, pt, em</td>
+                                                <td>расстояние между буквами</td>
+                                            </tr>
+                                            <tr class="cell">
+                                                <td>word-spacing</td>
+                                                <td>px, pt, em</td>
+                                                <td>расстояние между словами</td>
+                                            </tr>
+                                            <tr class="cell">
+                                                <td>text-shadow</td>
+                                                <td>x y r цвет</td>
+                                                <td>затенение текста(кордината по Х, координата по У, радиус затенения, цвет)</td>
+                                            </tr>
+                                            <tr class="cell">
+                                                <th colspan="3">Стилизация фона</th>
+                                            </tr>
+                                            <tr class="cell">
+                                                <td>background-color</td>
+                                                <td>green, #код(rgb), hsl(0, 100%, 50%), hsla(0, 100%, 50%, 0.5)</td>
+                                                <td>задается цвет фона</td>
+                                            </tr>
+                                            <tr class="cell">
+                                                <td>background-image</td>
+                                                <td>url(адрес)</td>
+                                                <td>задается фон, как картинка</td>
+                                            </tr>
+                                            <tr class="cell">
+                                                <td>background-position</td>
+                                                <td>x y</td>
+                                                <td>задается положение фона по горизонтали и по вертикали</td>
+                                            </tr>
+                                            <tr class="cell">
+                                                <td>background-size</td>
+                                                <td>px, %, cover, contain</td>
+                                                <td>
+                                                    задается размер фона(по горизонтали и по вертикали, cover - масштабирует изображение с сохранением пропорций так, чтобы его ширина или высота равнялась ширине или высоте блока, contain - масштабирует изображение с сохранением пропорций таким образом, чтобы картинка целиком поместилась внутрь блока)
+                                                </td>
+                                            </tr>
+                                            <tr class="cell">
+                                                <td>background-repeat</td>
+                                                <td>repeat-x, repeat-y, no-repeat</td>
+                                                <td>
+                                                    определяет, как будет повторяться фоновое изображение, установленное с помощью свойства
+                                                    <span>background-image</span>
+                                                </td>
+                                            </tr>
+                                            <tr class="cell">
+                                                <td>background-attachment</td>
+                                                <td>scroll, fixed</td>
+                                                <td>устанавливает, будет ли прокручиваться фоновое изображение вместе с содержимым элемента</td>
+                                            </tr> 
+                                        </table>
+                                    </div>
+                                </td>
+                           </tr>
+                       </table>
+
+                    </td>
+                </tr>
+            </table>
+        </main>
+
+        <footer>
+            Логинова Екатерина &copy
+        </footer>
+    </div>
+</body>
+</html>

@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Шестой урок</title>
+    <link rel="stylesheet" href="../css/style.css">
+
+
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="head">
+                <div class="logo">
+                    <div class="logo-img"></div>
+                    <h1>Курс Front-end</h1>
+                </div>
+                <h2>Шестой урок</h2>
+            </div>
+
+            <nav>
+                <a href="../index.html">главная</a>
+                <a href="targets.html">мои цели</a>
+                <a href="layouts.html">макеты</a>
+            </nav>
+        </header>
+
+        <main>
+            <table>
+                <tr>
+                    <td class="leftbar" >
+                        <img src="../img/main/foto.jpg" alt="foto">
+                        <ul>
+                            <li><a href="first_lesson.html">первый урок</a></li>
+                            <li><a href="second_lesson.html">второй урок</a></li>
+                            <li><a href="third_lesson.html">третий урок</a></li>
+                            <li><a href="fourth_lesson.html">четвертый урок</a></li>
+                            <li><a href="fifth_lesson.html">пятый урок</a></li>
+                            <li><a href="#">шестой урок</a></li>
+                            <li><a href="seventh_lesson.html">седьмой урок</a></li>
+                            <li><a href="eighth_lesson.html">восьмой урок</a></li>
+                            <li><a href="ninth_lesson.html">девятый урок</a></li>
+
+                        </ul>
+                    </td>
+                    <td class="content">
+                        <div class="title">Как вставить картинку тегом «img», чтобы картинку растянулась по размеру?</div>
+
+                        <div class="content-text">
+                            <span>1 способ.</span> Использование свойства «overflow: hidden» для тега «div», в который обернут тег «img». На рисунке приведена как применяется данный подход
+                        </div>
+
+                        <img src="../img/concpect/lesson6/img_content.PNG" alt="img_content" class="content-img">
+
+                        <div class="content-text">
+                            Данный способ подходит тогда, когда мы знаем размеры нашей картинки. Если же размеры нам не известны используется другой способ.
+                        </div>
+
+                        <div class="content-text">
+                            <span>2 способ.</span> Задается таким же образом в HTML картинка, как в предыдущем способе. Только в CSS срывается картинка для тега «img» с помощью свойства «opacity: 0» (означает, что картинка стала прозрачной). А для тега 'div», в котором лежит данная картинка задается свойство «background: url() center/cover no-repeat». В данном подходе картинка на странице в браузере воспринимается, как картинка. Что не происходит в первом способе.
+                        </div>
+
+                        <div class="content-text">
+                            Свойство «border-radius». Данное свойство отвечает за скругление углов блока. Углы можно скруглять окружностью (по умолчанию), а можно эллипсом. Задается следующим образом:
+                            <ul>
+                                <li>для окружности: «border-radius: a b c d», где a, b, c, d – соответствующие радиусы углов скругления</li>
+                                <li>для эллипса: «border-radius: a1/a2 b1/b2 c1/c2 d1/d2» , где значения с индексом «1» отвечает за расстояние от центра эллипса до вертикальной границы, а значения с индексом «2» – до горизонтальной границы</li>
+                            </ul>
+                        </div>
+
+                        <div class="content-text">
+                            <span>Градиенты.</span> Существуют два типа градиентов: линейный и радиальный. Задаются с помощью свойства «background-image»:
+                            <span>«liner-gradient»</span> можно задавать разными способами
+                        </div>
+
+                        <img src="../img/concpect/lesson6/liner_gradient.PNG" alt="liner_gradient" class="content-img">
+
+                        <div class="content-text">
+                            «%» указывают на то, какую часть занимает соответствующий цвет от всего размера элемента.
+                            «to …» указывает к чему (углу или стороне) будет изменятся цвета
+                            Можно также использовать несколько градиентов. Для того, чтобы можно было рисовать треугольники используется такой подход:
+                        </div>
+
+                        <img src="../img/concpect/lesson6/liner_gradient_2.PNG" alt="liner_gradient" class="content-img">
+
+                        <div class="content-text">
+                            <span>«radial-gradient»</span> задается
+                        </div>
+
+                        <img src="../img/concpect/lesson6/radial_gradient.PNG" alt="radial_gradient" class="content-img">
+                        <img src="../img/concpect/lesson6/radial_gradient_2.PNG" alt="radial_gradient" class="content-img">
+
+                    </td>
+                </tr>
+            </table>
+        </main>
+
+        <footer>
+            Логинова Екатерина &copy
+        </footer>
+    </div>
+</body>
+</html>

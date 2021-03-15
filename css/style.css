@@ -1,0 +1,80 @@
+@import 'main.css';
+@import 'targets.css';
+@import 'first_lesson.css';
+@import 'second_lesson.css';
+@import 'third_lesson.css';
+@import 'fourth_lesson.css';
+@import 'ninth_lesson.css';
+
+
+
+.title{
+    font-size: 22px;
+    font-weight: 800;
+    line-height: 30px;
+    text-align: center;
+    font-style: italic;
+}
+
+h3.subtitle{
+    font-weight: 500;
+}
+
+.content{
+    padding: 0 40px;
+    vertical-align: top;
+}
+
+.content-text{
+    text-align: justify;
+    padding: 10px 0;
+    line-height: 22px;
+}
+
+.content-italic{
+    font-style: italic;
+    color: rgb(211, 14, 41);
+}
+
+.ul-circle{
+    list-style-type: circle;
+    list-style-position: inside;
+}
+
+.content-text ul, .content-text ol{
+    padding-left: 20px;
+    margin-bottom: 20px;
+    margin-top: 5px;
+}
+
+.content-img{
+    display: block;
+    width: 670px;
+    margin: 0 auto;
+}
+
+.img-small{
+    width: 200px;
+}
+
+.layouts{   
+    padding-left: 50px;
+}
+
+.content-table th{
+    background-color: rgb(231, 188, 94);
+}
+
+.content-table th, .content-table td{
+    border: 1px solid #000;
+    text-align: justify;
+    padding: 2px 10px;
+    font-size: 15px;
+    font-style: italic;
+}
+
+.layouts a{
+    color:rgb(38, 168, 168);
+    font-size: 20px;
+    line-height: 30px;
+}

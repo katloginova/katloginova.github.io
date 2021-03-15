@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Пятый урок</title>
+    <link rel="stylesheet" href="../css/style.css">
+
+
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="head">
+                <div class="logo">
+                    <div class="logo-img"></div>
+                    <h1>Курс Front-end</h1>
+                </div>
+                <h2>Пятый урок</h2>
+            </div>
+
+            <nav>
+                <a href="../index.html">главная</a>
+                <a href="targets.html">мои цели</a>
+                <a href="layouts.html">макеты</a>
+            </nav>
+        </header>
+
+        <main>
+            <table>
+                <tr>
+                    <td class="leftbar" >
+                        <img src="../img/main/foto.jpg" alt="foto">
+                        <ul>
+                            <li><a href="first_lesson.html">первый урок</a></li>
+                            <li><a href="second_lesson.html">второй урок</a></li>
+                            <li><a href="third_lesson.html">третий урок</a></li>
+                            <li><a href="fourth_lesson.html">четвертый урок</a></li>
+                            <li><a href="#">пятый урок</a></li>
+                            <li><a href="sixth_lesson.html">шестой урок</a></li>
+                            <li><a href="seventh_lesson.html">седьмой урок</a></li>
+                            <li><a href="eighth_lesson.html">восьмой урок</a></li>
+                            <li><a href="ninth_lesson.html">девятый урок</a></li>
+
+                        </ul>
+                    </td>
+                    <td class="describe">
+                        <p>Свойство <span>"text-transform"</span> имеет следующие значения:</p>
+                        <ul>
+                            <li>uppercase (все буквы заглавные)</li>
+                            <li>lowercase (все буквы маленькие)</li>
+                            <li>capitalize (начало предложения с большой буквы)</li>
+                        </ul>
+                        <br>
+                        <p>псевдокласс <span>«:hover»</span> отвечает за действия при наведении мыши на элемент и записывается следующим образом:</p>
+                        <p>.button:hover{действия, которые совершаются при наведении на элемент «button»}</p>
+
+                        <h3>Подключение шрифтов</h3>
+                        <ol>
+                            <li>Скачивается с <span>«Google fonts»</span> необходимый шрифт (несколько файлов для разного типа жирности и наклонения)</li>
+                            <li>Создается папка <span>«fonts»</span>, в которой будут находится скаченные файлы</li>
+                            <li>
+                                В этой же папке создается файл, например, с названием <span>«fonts.css»</span>, в которой подключаются все необходимые шрифты <br>
+                                <img src="../img/concpect/lesson5/fonts.PNG" alt="fonts">
+                            </li>
+                            <li>Затем этот файл <span>«fonts.css»</span> подключатся в <span>*.html</span></li>
+                        </ol>
+
+                        <h3>Подключение видео на страницу</h3>
+                        <p>
+                            Подключение видео на страницу с помощью тега <span>«iframe»</span>. Для этого правой кнопкой мыши выбираем <span>«копировать HTML код»</span> на необходимом видео и вставляем его в <span>*.html</span>.
+                        </p>
+                        <br>
+                        <p>
+                            <span>box-shadow</span> (в нем есть такое свойство, как <span>«inset»</span>, делает тень внутри блока)
+                        </p>
+                        <br>
+                        <img src="../img/concpect/lesson5/box_shadow.PNG" alt="box_shadow">
+                        <br>
+                        <p>
+                            Использование свойства <span>«display: inline-block»</span> для выравнивания элементов на странице:
+                        </p>
+                        <ol>
+                            <li>Задается элементам, которых нужно выровнять свойство <span>«display: inline-block»</span></li>
+                            <li>Родителю этих элементов задается свойство <span>«text-align: justify»</span></li>
+                            <li>Но есть один момент свойство <span>«text-align: justify»</span> не растягивает по ширине последнюю строку. Поэтому данному родителю добавляется еще одна пустая строка</li>
+                            <li>Поскольку строка по умолчание уже имеет какую-то высоту, то для этого этому же родителю задают такие 2 свойства: <span>«line-height: 0»</span> и <span>«font-size: 0»</span></li>
+                        </ol>
+                    </td>
+                </tr>
+            </table>
+        </main>
+
+        <footer>
+            Логинова Екатерина &copy
+        </footer>
+    </div>
+</body>
+</html>

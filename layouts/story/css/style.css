@@ -1,0 +1,329 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+
+}
+
+/*header*/
+
+.head{
+    position: relative;
+}
+
+.head h1{
+    font-family: 'Poppins';
+    font-size: 189px;
+    padding-top: 35px;
+    line-height: 275px;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
+    text-align: center;
+    color: #e9ebec;
+}
+
+.head .marcy-wrap{
+    position: absolute;
+    width: 600px;
+    text-align: center;
+    top: 0;
+    left: 50%;
+    margin-left: -300px;
+}
+
+.marcy-wrap .marcy{
+    display: inline-block;
+    font-family: 'PlayfairDisplay';
+    font-size: 68px;
+    line-height: 125px;
+    padding-top: 10px;
+    color: #fff;
+    padding: 0 40px;
+    background-color: #80b7b3;
+    box-shadow: 0 30px 30px -17px #888;
+}
+
+
+/*travel*/
+
+.travel .travel-wrap{
+    position: relative;
+}
+
+.travel .travel-wrap .travel-story{
+    display: inline-block;
+    width: 490px;
+    padding-right: 60px;
+}
+
+.travel-story .travel-describe{
+    margin-top: 60px;
+    margin-bottom: 30px;
+    font-family: 'PlayfairDisplay';
+    font-size: 24px;
+    line-height: 40px;
+    font-weight: 400;
+    color: #666;
+}
+
+.travel-describ br{
+    line-height: 30px;
+}
+
+.travel .travel-wrap .travel-img{
+    position: absolute;
+    top: 10px;
+    right: -150px;
+    width: 685px;
+    height: 545px;
+    background: url('../images/layers.jpg') center / cover no-repeat;
+    border: 15px solid #fff;
+    border-right: none;
+    box-shadow: 0px 15px 65px 0px rgba(15,16,16,0.15);
+}
+
+.travel .travel-wrap .travel-foto{
+    position: absolute;
+    top: 70px;
+    right: 307px;
+    width: 375px;
+    height: 250px;
+    border: 15px solid #fff;
+    box-shadow: 0px 15px 65px 0px rgba(15,16,16,0.15);
+    background: center / cover no-repeat;
+}
+
+.travel .travel-wrap .travel-foto img{
+    width: 100%;
+    opacity: 0;
+}
+
+
+
+/*quote*/
+
+section.quote{
+    padding-bottom: 345px;
+
+}
+
+.quote .quote-wrap{
+    position: relative;
+    width: 945px;
+    margin: 0 auto;
+    padding-top: 60px;
+    text-align: justify;
+    line-height: 0;
+}
+
+.quote .quote-wrap .quote-foto{
+    display: inline-block;
+    width: 430px;
+    height: 285px;
+    background: center / cover no-repeat;
+    border: 15px solid #fff;
+    box-shadow: 0px 15px 65px 0px rgba(15,16,16,0.15);
+}
+
+.quote .quote-wrap .quote-foto img{
+    width: 100%;
+    opacity: 0;
+}
+
+.quote .quote-wrap .quote-title{
+    display: inline-block;
+    width: 460px;
+    vertical-align: top;
+    padding-top: 35px;
+    padding-right: 80px;
+}
+
+.quote .quote-wrap .quote-content{
+    position: absolute;
+    top: 295px;
+    right: 0;
+    width: 750px;
+    padding: 65px 100px;
+    background-color: #fff;
+    box-shadow: 0px 15px 65px 0px rgba(15,16,16,0.15);
+}
+
+.quote-content .content-describe{
+    font-family: 'PlayfairDisplay';
+    font-size: 26px;
+    line-height: 46px;
+    font-weight: 400;
+    color: #273d46;
+    padding-bottom: 15px;
+}
+
+.quote-content .content-describe span{
+    font-size: 36px;
+}
+
+.quote-content .content-sign{
+    padding: 20px 0;
+    font-family: 'Poppins';
+    font-size: 14px;
+    line-height: 14px;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
+    color: #52646b;
+}
+
+.quote-content .content-sign span{
+    color: #aaabab;
+    padding-left: 5px;
+}
+
+
+/*forest*/
+
+section.update{
+    background: url('../images/bg_forest.png') center / cover no-repeat;
+    padding-top: 150px;
+    padding-bottom: 135px;
+
+}
+
+.update .update-content{
+    position: relative;
+    width: 670px;
+    margin: 0 auto;
+    padding: 60px 70px;
+    background-color: #33494f;
+}
+
+.update-content .update-text{
+    padding: 0 50px;
+    font-family: "Poppins";
+    font-size: 16px;
+    line-height: 30px;
+    font-weight: 500;
+    color: #fff;
+    text-align: center;
+}
+
+.update-content .update-form{
+    text-align: justify;
+    padding-top: 50px;
+    line-height: 0;
+}
+
+.update-form input{
+    outline: none;
+}
+
+.update-form input:focus{
+    border: 3px solid tomato;
+    border-radius: 23px;
+}
+
+.update-form input[type='submit']{
+    display: none;
+}
+
+
+
+/*common*/
+
+.container{
+    width: 1170px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.title{
+    font-family: 'Poppins';
+    font-size: 14px;
+    line-height: 14px;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
+    color: #7d8b90;
+}
+
+.subtitle{
+    font-family: 'PlayfairDisplay';
+    font-size: 36px;
+    line-height: 55px;
+    font-weight: 400;
+    padding-top: 15px;
+}
+
+.button{
+    display: inline-block;
+    padding: 0 30px;
+    line-height: 45px;
+    background-color: #80b7b3;
+    box-shadow: 0px 6px 40px 0px rgba(128,183,179,0.54);
+    border-radius: 23px;
+    font-family: 'Poppins';
+    font-size: 14px;
+    font-weight: 500;
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
+    word-spacing: 2px;
+
+}
+
+.button img{
+    display: inline-block;
+    width: 20px;
+    height: 14px;
+    vertical-align: middle;
+    margin-left: 5px;
+}
+
+.button-ml{
+    margin-left: -10px;
+}
+
+.button-position{
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    margin-left: -200px;
+    margin-bottom: -22px;
+    width: 400px;
+    text-align: center;
+}
+
+.button-submit{
+    text-align: center;
+    margin-top: 22px;
+}
+
+.button-submit>.button{
+    padding: 0 46px;
+}
+
+.form{
+    width: 249px;
+    line-height: 47px;
+    padding-left: 38px;
+    background-color: #2f3f44;
+    border: 1px solid #fff7f4;
+    border-radius: 22px;
+    font-size: 14px;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
+    color: #abb1b3;
+}
+
+.last-line{
+    display: inline-block;
+    width: 100%;
+}
+
+a{
+    text-decoration: none;
+}
+
+a:hover, form .button:hover{
+    background-color: #2da8a0;
+}

@@ -1,0 +1,65 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: Helvetica, Arial, sans-serif;
+}
+
+main{
+    background-color: #777;
+    padding: 15px 0 30px 0;
+}
+
+.container{
+    width: 1280px;
+    margin: 0 auto;
+}
+
+.hello{
+    background-color: #fff;
+    padding: 50px 50px 70px 50px;
+    font-size: 22px;
+    line-height: 40px;
+}
+
+.middle{
+    width: 100%;
+    height: 200px;
+    background-repeat: no-repeat;
+    background-size: 75% 155px, 25% 155px, 35% 155px, 75% 155px, 100% 45px;
+    background-position: left 0, right 0, right 0, left 0, left 155px;
+    background-image: 
+        linear-gradient(to top right, #777 50%, transparent 50%),
+        linear-gradient(to top left, #777 50%, transparent 50%),
+        linear-gradient(to top left, rgb(255, 196, 0) 50%, white 50%),
+        linear-gradient(to top right, transparent 50%, #fff 50%),
+        linear-gradient(#777, #777);
+}
+
+.middle .middle-text{
+    width: 635px;
+    padding-top: 120px ;
+    padding-left: 20px;
+    color: #fff;
+    font-size: 16px;
+    line-height: 18px;
+    font-weight: 500;
+}
+
+.complete{
+    width: 100%;
+    height: 350px;
+    background-repeat: no-repeat;
+    background-size: 385px 150px, 895px 150px, 100% 200px;
+    background-position: left top, right top, left 150px;
+    background-image: 
+        linear-gradient(to bottom left, transparent 50%, #fff 50%),
+        linear-gradient(to top left, #fff 50%, transparent 50%),
+        linear-gradient(#fff, #fff);
+}
+
+.complete .complete-text{
+    padding-top: 275px;
+    padding-left: 50px;
+    font-size: 20px;
+    font-weight: 700;
+}

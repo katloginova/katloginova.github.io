@@ -1,0 +1,8 @@
+main .describe a{
+    color: rgb(64, 18, 172);
+    text-decoration: underline;
+}
+
+main .describe ol{
+    padding-left: 18px;
+}

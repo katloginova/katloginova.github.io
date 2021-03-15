@@ -1,0 +1,363 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'OpenSans';
+    box-sizing: border-box;
+
+}
+
+
+/*header*/
+
+header .head{
+    padding-top: 80px;
+}
+
+header .head h1{
+    font-size: 30px;
+    font-weight: 500;
+}
+
+.head nav .menu{
+    display: inline-block;
+    width: 100%;
+    height: 70px;
+    text-align: right;
+    border-bottom: 3px dashed #000;
+}
+
+.head nav .menu a{
+    display: inline-block;
+    text-decoration: none;
+    color: #000;
+    font-size: 16px;
+    line-height: 17px;
+    text-transform: uppercase; 
+    padding: 50px 10px 0 10px;
+}
+
+.head nav .menu a:hover{
+    font-weight: 700;
+    border-bottom: 3px solid #000;
+}
+
+
+/*aboutme*/
+
+.aboutme .aboutme-title{
+    padding-top: 60px;
+    border-bottom: 5px solid #000;
+}
+
+.aboutme .aboutme-title h2{
+    font-size: 70px;
+    text-transform: uppercase;
+    line-height: 70px;
+    text-shadow: 3px 6px 0 #999;
+}
+
+.aboutme .aboutme-desription{
+    padding: 65px 0 45px 0;
+    border-bottom: 3px solid #000;
+    font-size: 0;
+}
+
+.aboutme .aboutme-desription .description-foto{
+    display: inline-block;
+    width: 390px;
+    height: 410px;
+    background: url('../images/foto_me.jpg') center / cover no-repeat;
+}
+
+.aboutme .aboutme-desription .description-foto img{
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+}
+
+.aboutme .aboutme-desription .description-text{
+    display: inline-block;
+    width: 690px;
+    padding-left: 50px;
+    vertical-align: top;
+}
+
+.description-text .text{
+    padding-top: 35px;
+    padding-right: 40px;
+    text-align: justify;
+    font-size: 16px;
+}
+
+.description-text .design{
+    margin-top: 25px;
+    background-color: rgb(206, 207, 207);
+    padding: 25px 20px;
+    text-align: justify;
+    font-size: 14px;
+    font-style: italic;
+}
+
+.description-text .design .design-sign{
+    padding-top: 20px;
+    text-align: right;
+}
+
+.description-text .design .design-sign span{
+    font-weight: 700;
+}
+
+
+/*skills*/
+
+
+.skills .skills-wrap{
+    padding-top: 50px;
+    padding-bottom: 45px;
+    border-bottom: 3px solid #000;
+
+}
+
+.skills .skills-wrap .skills-programs{
+    display: inline-block;
+    width: 500px;
+}
+
+.skills .skills-wrap .skills-programs .programs-list{
+    padding-top: 25px;
+}
+
+.programs-list .program{
+    width: 100%;
+    line-height: 40px;
+    font-style: italic;
+    padding-left: 15px;
+    font-size: 25px;
+    background-color: rgb(206, 207, 207);
+    margin-bottom: 10px;
+}
+
+.programs-list .width-per80{
+    width: 80%;
+}
+
+.programs-list .width-per60{
+    width: 60%;
+}
+
+.skills-programs .scale .scale-borders{
+    font-size: 0;
+}
+
+.scale-borders .scale-border{
+    display: inline-block;
+    width: 20%;
+    height: 22px;
+    border-right: 2px solid #000;
+    border-bottom: 2px solid #000;
+}
+
+.skills-programs .scale .scale-numbers{
+    padding-left: 5px;
+    font-size: 0;
+}
+
+.scale-numbers .scale-number{
+    display: inline-block;
+    width: 20%;
+    height: 22px;
+    font-size: 16px;
+    font-weight: 600;
+    text-align: right;
+}
+
+.skills .skills-doing{
+    display: inline-block;
+    width: 500px;
+    vertical-align: top;
+    margin-left: 70px;
+}
+
+.skills-doing .doing-items{
+    padding-top: 25px;
+    font-size: 0;
+}
+
+.doing-items .doing-item{
+    margin-bottom: 8px;
+}
+
+.doing-items .doing-item .circle{
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background-color: #000;
+    border-radius: 50%;
+    margin-right: 15px;
+    vertical-align: top;
+}
+
+.doing-items .doing-item .circle-text{
+    display: inline-block;
+    width: 465px;
+    font-size: 15px;
+    text-align: justify;
+    vertical-align: top;
+}
+
+
+/*cat*/
+
+
+.cat .cat-wrap{
+    text-align-last: justify;
+    padding: 20px 0 10px 50px;
+
+}
+
+.cat .cat-wrap .cat-img{
+    display: inline-block;
+    width: 160px;
+    height: 160px;
+    background: url('../images/cat.PNG') center / cover no-repeat;
+    border-radius: 50%;
+    vertical-align: top;
+}
+
+.cat .cat-wrap .cat-img img{
+    opacity: 0;
+}
+
+.cat .cat-wrap .cat-text{
+    display: inline-block;
+    width: 820px;
+    vertical-align: top;
+    text-align: justify;
+}
+
+
+/*footer*/
+
+footer{
+    width: 1280px;
+    margin: 0 auto;
+    background-color: #000;
+    color: #fff;
+}
+
+.contacts-wrap{
+    padding-top: 35px;
+    padding-bottom: 25px;
+}
+
+.contacts{
+    display: inline-block;
+    vertical-align: top;
+    width: 400px;
+}
+
+.contacts .contact{
+    padding-left: 20px;
+}
+
+.contacts .contact .contact-tel{
+    display: inline-block;
+    vertical-align: top;
+}
+
+.contacts .contact .contact-social{
+    display: inline-block;
+}
+
+
+.contacts .contact .contact-head{
+    font-size: 30px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.contacts .contact .contact-tel .tel-link{
+    width: 230px;
+}
+
+.contacts .contact .contact-social .social-link{
+    width: 95px;
+}
+
+.contacts .contact a{
+    display: inline-block;
+    text-decoration: none;
+    color: #fff;
+    font-size: 17px;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+
+.contacts .contact .social-link a{
+    text-decoration: underline;
+}
+
+.circle-lorem{
+    display: inline-block;
+    margin-left: 150px;
+    width: 355px;
+    height: 355px;
+    border-radius: 50%;
+    background-repeat: no-repeat;
+    background-size: 80% 80%, 100% 100%;
+    background-position: center center;
+    background-image: 
+        radial-gradient(closest-side circle at center, white 81%, transparent 80%),
+        radial-gradient(closest-side circle at center, transparent 85%, white 85%);
+}
+
+.circle-lorem .lorem-text{
+    padding: 0 120px;
+    padding-top: 40%;
+    font-size: 28px;
+    font-weight: 600;
+    text-align: center;
+    color: #000;
+}
+
+
+
+/*common*/
+
+.container{
+    width: 1280px;
+    padding: 0 100px;
+    margin: 0 auto;
+}
+
+.title{
+    font-size: 0;
+}
+
+.title .title-rectang{
+    display: inline-block;
+    line-height: 50px;
+    vertical-align: middle;
+    padding-left: 15px;
+    padding-right: 5px;
+    font-size: 25px;
+    font-weight: 700;
+    color: #fff;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-position: 0 0;
+    background-image: 
+        linear-gradient(#000, #000);
+}
+
+.title .title-triang{
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    vertical-align: middle;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-position: 0 0;
+    background-image: 
+        linear-gradient(to top left, transparent 50%, #000 50%);
+}
