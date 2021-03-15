@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Десятый урок</title>
+    <link rel="stylesheet" href="../css/style.css">
+
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="head">
+                <div class="logo">
+                    <div class="logo-img"></div>
+                    <h1>Курс Front-end</h1>
+                </div>
+                <h2>Десятый урок</h2>
+            </div>
+
+            <nav>
+                <a href="../index.html">главная</a>
+                <a href="targets.html">мои цели</a>
+                <a href="layouts.html">макеты</a>
+            </nav>
+        </header>
+
+        <main>
+            <div class="leftbar">
+                <img src="../img/main/foto.jpg" alt="foto">
+                <ul>
+                    <li><a href="first_lesson.html">первый урок</a></li>
+                    <li><a href="second_lesson.html">второй урок</a></li>
+                    <li><a href="third_lesson.html">третий урок</a></li>
+                    <li><a href="fourth_lesson.html">четвертый урок</a></li>
+                    <li><a href="fifth_lesson.html">пятый урок</a></li>
+                    <li><a href="sixth_lesson.html">шестой урок</a></li>
+                    <li><a href="seventh_lesson.html">седьмой урок</a></li>
+                    <li><a href="eighth_lesson.html">восьмой урок</a></li>
+                    <li><a href="ninth_lesson.html">девятый урок</a></li>
+                    <li><a href="#">десятый урок</a></li>
+
+
+                </ul>
+            </div>
+
+            <div class="content">
+                <div class="title">GIT и GitHub (1 часть)</div>
+
+                <div class="content-text">
+                    <span>GIT</span> – это одна из систем контроля версий. Это значит, что она хранит всю историю изменений проекта. История Вашего проекта и история изменений этого 
+                </div>
+
+                <div class="content-text">
+                    Первым делом мы загрузим Git. Для пользователей Windows необходимо установить Git Bash. После завершения установки приступим к регистрации аккаунта GitHub. Итак, у нас теперь есть Git, инструмент командной строки, и GitHub аккаунт, куда мы будем загружать свои репозитории.
+                </div>
+
+                <div class="content-text">
+                    Используя Git Bash перейдем в корневую директорию проекта. Для начала проверим в какой папке мы находимся с помощью команды <span>«pwd»</span>
+                </div>
+                <div class="content-text">
+                    Затем при необходимости перейдем в нужную папки с помощью команды:
+                </div>
+                <div class="content-italic">
+                    cd /путь папки (можно мышкой перетащить саму папку и путь пропишется сам)
+                </div>
+                <div class="content-text">
+                    Первым делом необходимо установить Git для данной папки проекта. Делается это с помощью команды (создаст «.git» репозиторий в проекте.):
+                </div>
+                <div class="content-italic">
+                    git init 
+                </div>
+                <div class="content-text">
+                    Затем пропишем две команды, которые определят информацию, которая будет использоваться при каждом commit (фиксирование изменений). Их стоит выполнить всего один раз при первичной установке Git:
+                </div>
+                <div class="content-italic">
+                    git config --global user.name "Ваше Имя"
+                </div>
+                <div class="content-italic">
+                    git config --global user.email "ВашаПочта@mail.com"
+                </div>
+                <div class="content-text">
+                    Команда, которая создает файл с названием «.gitignore». В нем необходимо прописать названия файлов или директорий, изменения в которых не нужно отслеживать (они будут игнорироваться Git). Изменения в игнорируемых файлах не будут отображаться при выполнении git status (этот файл можно создать также вручную без команды):
+                </div>
+                <div class="content-italic">
+                    touch .gitignore
+                </div>
+                <div class="content-text">
+                    Следующая команда добавит файл в “staging area”(участок подготовки). staging area – это своего рода секция, в которой файлы проходят подготовку к перемещению в наш репозиторий:
+                </div>
+                <div class="content-italic">
+                    git add имяФайла.расширение
+                </div>
+                <div class="content-text">
+                    Если необходимо добавить всё из директории проекта в staging area:
+                </div>
+                <div class="content-italic">
+                    git  add  .
+                </div>
+                <div class="content-text">
+                    Если необходимо добавить все файлы с расширением .html в staging area (расширение можно менять):
+                </div>
+                <div class="content-italic">
+                    git add *.html
+                </div>
+                <div class="content-text">
+                    Чтобы показать, что уже было добавлено в staging area и какие файлы были изменены и ждут перемещения в staging area:
+                </div>
+                <div class="content-italic">
+                    git status
+                </div>
+                <div class="content-text">
+                    Если необходимо убирать выбранный файл из staging area:
+                </div>
+                <div class="content-italic">
+                    git reset имяФайла.расширение
+                </div>
+                <div class="content-text">
+                    Команда для создания коммита, которая берёт файлы из staging area и “фиксирует” их в локальный репозиторий. В кавычки следует вставить краткое описание изменений для конкретного коммита:
+                </div>
+                <div class="content-italic">
+                    git commit -m "описание коммита"
+                </div>
+                <div class="content-text">
+                    Показывает список коммитов, которые у нас есть в проекте, команда:
+                </div>
+                <div class="content-italic">
+                    git log
+                </div>
+                <div class="content-text">
+                    Если нужно сравнить текущее состояние проекта с указанным коммитом (id_commit), то:
+                </div>
+                <div class="content-italic">
+                    git diff id_commit
+                </div>
+                <div class="content-text">
+                    Команда для создания ветки:
+                </div>
+                <div class="content-italic">
+                    git branch add названиеВетки
+                </div>
+                <div class="content-text">
+                    Переключает контроль над созданной веткой и работает в её пределах:
+                </div>
+                <div class="content-italic">
+                    git checkout названиеВетки
+                </div>
+                <div class="content-text">
+                    Создает ветку и переключается на нее:
+                </div>
+                <div class="content-italic">
+                    git checkout -b названиеВетки
+                </div>
+                <div class="content-text">
+                    Находясь в какой-то из веток, эта команда берет коммиты из ветки, которая указана и добавляет в ту на которой мы находимся:
+                </div>
+                <div class="content-italic">
+                    git merge названиеВетки
+                </div>
+                <div class="content-text">
+                    При выполнении команды «merge» может произойти конфликт, который происходит, если в одном файле совпадают строки. В таком случае мы исправляем все необходимой в файле и создаем коммит без описания. И тогда используется описание предложенное самим Git.
+                </div>
+
+
+                <h3 class="subtitle">Как подключить проект на удаленный репозиторий?</h3>
+
+                <div class="content-text">
+                    <p>
+                        Перед тем, как подключить наш проект на удаленный репозиторий, необходимо для начала добавить ключ из локального компьютера на GitHub. 
+                        Открываем утилит <span>Git GUI</span>, а там на вкладке Help выбираем Show SSH key и генерируем ключ. Затем этот ключ копируется и вставляется на GitHub. Ключ можно также сгенерировать с помощью команд в консоли. Для этого перейдем в папку «ssh» с помощью команды «cd ~/ssh». Далее с помощью команды <span>«ssh-keygen»</span> генерирую ключ, а с помощью команды «cat id_rsa.pub» – вывожу ключ в консоль.
+                    </p>
+                    <p>
+                        Для того, чтобы подключить полученный ключ на GitHub, заходим в <span>Setting –> SSH and GPG keys –> New SSH key</span> и добавляем скопированный ключ.
+                    </p>
+                </div>
+
+                <div class="content-text">
+                    Теперь привяжем наш проект с компьютера на удаленный репозиторий с помощью команды:
+                </div>
+
+                <div class="content-italic">
+                    git remote add origin git@github.com:katloginova/progect_hillel.git
+                </div>
+                <div class="content-text">
+                    где <span>git@github.com:katloginova/progect_hillel.git</span> – путь SSH на наш удаленный репозиторий
+                </div>
+                <div class="content-text">
+                    После этого можно загружать наш проект на репозиторий с помощью команды:
+                </div>
+                <div class="content-italic">
+                    git push origin имяВетки(master)
+                </div>
+
+        </main>
+
+        <footer>
+            Логинова Екатерина &copy
+        </footer>
+    </div>
+</body>
+</html>
