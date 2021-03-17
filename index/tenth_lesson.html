@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Десятый урок</title>
+    <title>Десятый и одиннадцатый уроки</title>
     <link rel="stylesheet" href="../css/style.css">
 
 </head>
@@ -16,13 +16,15 @@
                     <div class="logo-img"></div>
                     <h1>Курс Front-end</h1>
                 </div>
-                <h2>Десятый урок</h2>
+                <h2>Десятый и одиннадцатый уроки</h2>
             </div>
 
             <nav>
                 <a href="../index.html">главная</a>
                 <a href="targets.html">мои цели</a>
                 <a href="layouts.html">макеты</a>
+                <a href="content.html">содержание уроков</a>
+
             </nav>
         </header>
 
@@ -39,14 +41,14 @@
                     <li><a href="seventh_lesson.html">седьмой урок</a></li>
                     <li><a href="eighth_lesson.html">восьмой урок</a></li>
                     <li><a href="ninth_lesson.html">девятый урок</a></li>
-                    <li><a href="#">десятый урок</a></li>
+                    <li><a href="#">десятый и одиннадцатый уроки</a></li>
 
 
                 </ul>
             </div>
 
             <div class="content">
-                <div class="title">GIT и GitHub (1 часть)</div>
+                <div class="title">GIT и GitHub (урок 10)</div>
 
                 <div class="content-text">
                     <span>GIT</span> – это одна из систем контроля версий. Это значит, что она хранит всю историю изменений проекта. История Вашего проекта и история изменений этого 
@@ -192,6 +194,100 @@
                     git push origin имяВетки(master)
                 </div>
 
+
+                <div class="title">GIT, GitHub и GitHub Pages (урок 11)</div>
+
+                <div class="content-text">
+                    Команда, которая показывает какие есть ветки в проекте:
+                </div>
+                <div class="content-italic">
+                    git branch
+                </div>
+                <div class="content-text">
+                    Команда для того, чтобы загрузить проект с удаленного репозитория на компьютер, где нет данного проекта (название папки соответствует названию репозитория на GitHub):
+                </div>
+                <div class="content-italic">
+                    git clone git@github.com:katloginova/progect_hillel.git
+                </div>
+                <div class="content-text">
+                    По умолчанию из удаленного репозитория затягивается только одна ветка «master». Команда «git fetch» связывается с удалённым репозиторием и забирает из него все изменения, которых у нас пока нет и сохраняет их локально. Для того, чтобы затянуть остальные ветки выполняется команда:
+                </div>
+                <div class="content-italic">
+                    git fetch
+                </div>
+                <div class="content-text">
+                    Команда «git pull» работает как комбинация команд «git fetch» и «git merge», т.е. Git вначале забирает изменения из указанного удалённого репозитория, а затем пытается слить их с текущей веткой.
+                </div>
+                <div class="content-italic">
+                    git pull origin master
+                </div>
+                <div class="content-text">
+                    Команда, которая отменяет процесс слияния веток:
+                </div>
+                <div class="content-italic">
+                    git merge --abort
+                </div>
+                <div class="content-text">
+                    Для того, чтобы вернуться к какому-то коммиту есть команда <span id="italic">«git reset id_commit»</span> (можно использовать вместо «id_commit» «head», так называется последний коммит). Есть два режима «reset»:
+                </div>
+                <ul class="ul-circle">
+                    <li>обычный <span id="italic">«git reset id_commit»</span> удаляет коммиты, но не изменяет сами файлы</li>
+                    <li>
+                        жесткий <span id="italic">«git reset id_commit --hard»</span> удаляет не только коммиты, а сбрасывает все файлы до состояния последнего оставшегося коммита
+                    </li>
+                </ul>
+                <div class="content-text">
+                    Но так делать можно только, если эти коммиты, которые мы удаляем еще не за-push на удаленный репозиторий, иначе будет конфликт. Обычно на практике «reset» используется только для удаления последнего коммита. Есть альтернативная команда, которая не удаляет коммиты, а делает новые коммиты такими, как будто мы вернулись к тому состоянию проекта, коммит которого мы указываем вместе с этой командой:
+                </div>
+                <div class="content-italic">
+                    git revert commit
+                </div>
+                <div class="content-text">
+                    Если необходимо удалить привязку к удаленному репозиторию используется команда:
+                </div>
+                <div class="content-italic">
+                    git remote rm origin
+                </div>
+
+                <h3 class="subtitle">Как выложить наш проект на GitHub Pages?</h3>
+                <div class="content-text">
+                    <span>GitHub Pages</span> – это бесплатный хостинг для статических файлов, но размещать можно только один проект.
+                </div>
+                <div class="content-text">
+                    Для того, чтобы выложить наш проект на GitHub Pages зайдем на GitHub в наш проект и на вкладке <span>«Settings»</span> переименуем проект на следующее имя:
+                </div>
+                <div class="content-italic">
+                    имя_пользователя.github.io (katloginova.github.io)
+                </div>
+                <div class="content-text">
+                    Если пролистать ниже содержимое вкладки «Settings», то можно увидеть адрес-ссылка, по которой можно перейти на страницу проекта:
+                </div>
+                <div class="content-italic">
+                    Your site is published at https://katloginova.github.io/
+                </div>
+
+                <h3 class="subtitle">Пошаговое использование Git с нуля проекта</h3>
+
+                <div class="content-text">
+                    <ol>
+                        <li>
+                            Когда только создали папку с проектом еще до начала работы с самим проектом, необходимо создать пустой локальный репозиторий <span>«.git»</span> с помощью <span>«git init»</span>.
+                        </li>
+                        <li>
+                            Создаем файл <span>«.gitignore»</span> в папке проекта, где указываем все файлы или папки, за которыми Git не нужно следить:
+                            <ul>
+                                <li>папки записываются – «/имя_папки»;</li>
+                                <li>файлы записываются – «имя_файла».</li>
+                            </ul>
+                        </li>
+                        <li>
+                            Следующим шагом будет создание начального коммита, желательно с комментарием «initial» с помощью <span>«git add .»</span> и <span>«git commit -m”project initial”»</span>
+                        </li>
+                        <li>
+                            После этого сразу создадим и привяжем репозиторий на GitHub с помощью <span>«git remote add origin путь(ssh)»</span> и <span>«git push origin master»</span>.
+                        </li>
+                    </ol>
+                </div>
         </main>
 
         <footer>

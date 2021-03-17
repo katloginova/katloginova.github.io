@@ -18,6 +18,7 @@
 
 h3.subtitle{
     font-weight: 500;
+    text-decoration: underline;
 }
 
 .content{
@@ -34,6 +35,7 @@ h3.subtitle{
 .content-italic{
     font-style: italic;
     color: rgb(211, 14, 41);
+    padding: 10px 0;
 }
 
 .ul-circle{
@@ -57,8 +59,9 @@ h3.subtitle{
     width: 200px;
 }
 
-.layouts{   
+.layouts, .content-lessons{   
     padding-left: 50px;
+    margin-top: 30px;
 }
 
 .content-table th{
@@ -73,8 +76,18 @@ h3.subtitle{
     font-style: italic;
 }
 
-.layouts a{
+.layouts a, .content-lessons a{
     color:rgb(38, 168, 168);
     font-size: 20px;
     line-height: 30px;
+}
+
+.content-lessons a{
+    color: rgb(104, 146, 7);
+    
+}
+
+span#italic{
+    font-style: italic;
+    font-weight: 500;
 }
