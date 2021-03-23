@@ -5,6 +5,7 @@
 @import 'third_lesson.css';
 @import 'fourth_lesson.css';
 @import 'ninth_lesson.css';
+@import 'layouts.css';
 
 
 
@@ -59,6 +60,12 @@ h3.subtitle{
     width: 200px;
 }
 
+.img-medium{
+    display: block;
+    width: 400px;
+    margin: 0 auto;
+}
+
 .layouts, .content-lessons{   
     padding-left: 50px;
     margin-top: 30px;
@@ -87,7 +94,7 @@ h3.subtitle{
     
 }
 
-span#italic{
+.italic{
     font-style: italic;
     font-weight: 500;
 }

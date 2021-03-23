@@ -1,0 +1,432 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'OpenSans';
+    box-sizing: border-box;
+
+}
+
+
+/*header*/
+
+header .head{
+    padding-top: 80px;
+}
+
+header .head h1{
+    font-size: 30px;
+    font-weight: 500;
+}
+
+.head nav .menu{
+    display: inline-block;
+    margin-top: 40px;
+    width: 100%;
+    height: 30px;
+    text-align: right;
+    border-bottom: 3px dashed #000;
+}
+
+.head nav .menu a{
+    display: inline-block;
+    text-decoration: none;
+    color: #000;
+    /* color:#fff; */
+    font-size: 16px;
+    line-height: 17px;
+    text-transform: uppercase; 
+    padding: 10px 10px 0 10px;
+}
+
+.head nav .menu a:hover{
+    font-weight: 700;
+    border-bottom: 3px solid #000;
+    transform: skewX(-15deg);
+    text-shadow: 1px 2px #777;
+    box-shadow: 5px 5px 5px 5px #555;
+    transition: all 100ms;
+}
+
+
+/*aboutme*/
+
+.aboutme .aboutme-title{
+    padding-top: 60px;
+    border-bottom: 5px solid #000;
+}
+
+.aboutme .aboutme-title h2{
+    font-size: 70px;
+    text-transform: uppercase;
+    line-height: 70px;
+    text-shadow: 3px 6px 0 #999;
+}
+
+.aboutme .aboutme-desription{
+    padding: 65px 0 45px 0;
+    border-bottom: 3px solid #000;
+    font-size: 0;
+}
+
+.aboutme .aboutme-desription .description-foto{
+    position: relative;
+    display: inline-block;
+    width: 390px;
+    height: 410px;
+    background: url('../images/foto_me.jpg') center / cover no-repeat;
+}
+
+.aboutme .aboutme-desription .description-foto img{
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+}
+
+.aboutme .aboutme-desription .description-foto:hover{
+    border-radius: 50%;
+    box-shadow: 0 0 40px 20px rgb(241, 191, 99);
+    transform: scale(0.8);
+    transition: all 500ms;
+
+}
+
+.aboutme .aboutme-desription .description-foto .foto-name{
+    position: absolute;
+    bottom: 0px;
+    left: 0;
+    display: inline-block;
+    font-size: 18px;
+    width: 390px;
+    height: 410px;
+    padding-top: 340px;
+    color: transparent;
+}
+
+.aboutme .aboutme-desription .description-foto .foto-name span{
+    font-weight: 700;
+}
+
+@keyframes foto_name{
+    from{
+    }
+    to{
+        transform: translateX(1050px);
+    }
+}
+
+.aboutme .aboutme-desription .description-foto .foto-name:hover{
+    animation-name: foto_name;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+    color: #000;
+}
+
+.aboutme .aboutme-desription .description-text{
+    display: inline-block;
+    width: 690px;
+    padding-left: 50px;
+    vertical-align: top;
+}
+
+.description-text .text{
+    padding-top: 35px;
+    padding-right: 40px;
+    text-align: justify;
+    font-size: 16px;
+}
+
+.description-text .design{
+    margin-top: 25px;
+    background-color: rgb(206, 207, 207);
+    padding: 25px 20px 50px 20px;
+    text-align: justify;
+    font-size: 14px;
+    font-style: italic;
+}
+
+
+/*skills*/
+
+.skills .skills-wrap{
+    padding-top: 50px;
+    padding-bottom: 45px;
+    border-bottom: 3px solid #000;
+
+}
+
+.skills .skills-wrap .skills-programs{
+    display: inline-block;
+    width: 500px;
+}
+
+.skills .skills-wrap .skills-programs .programs-list{
+    padding-top: 25px;
+    /* animation-name: skills;
+    animation-duration: 5s;
+    animation-play-state: running;
+    animation-iteration-count: infinite; */
+}
+
+@keyframes skills{
+    from{
+        width: 0;
+        color: transparent;
+    }
+    to{
+        width: 100%;
+        color: #000;
+    }
+}
+
+.skills .skills-wrap .skills-programs .programs-list:hover{
+    animation-name: skills;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+.programs-list .program{
+    width: 100%;
+    line-height: 40px;
+    font-style: italic;
+    padding-left: 15px;
+    font-size: 25px;
+    background-color: rgb(206, 207, 207);
+    margin-bottom: 10px;
+}
+
+.programs-list .width-per80{
+    width: 80%;
+}
+
+.programs-list .width-per60{
+    width: 60%;
+}
+
+.skills-programs .scale .scale-borders{
+    font-size: 0;
+}
+
+.scale-borders .scale-border{
+    display: inline-block;
+    width: 20%;
+    height: 22px;
+    border-right: 2px solid #000;
+    border-bottom: 2px solid #000;
+}
+
+.skills-programs .scale .scale-numbers{
+    padding-left: 5px;
+    font-size: 0;
+}
+
+.scale-numbers .scale-number{
+    display: inline-block;
+    width: 20%;
+    height: 22px;
+    font-size: 16px;
+    font-weight: 600;
+    text-align: right;
+}
+
+.skills .skills-doing{
+    display: inline-block;
+    width: 500px;
+    vertical-align: top;
+    margin-left: 70px;
+}
+
+.skills-doing .doing-items{
+    padding-top: 25px;
+    font-size: 0;
+}
+
+.doing-items .doing-item{
+    margin-bottom: 8px;
+}
+
+.doing-items .doing-item .circle{
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background-color: #000;
+    border-radius: 50%;
+    margin-right: 15px;
+    vertical-align: top;
+}
+
+.doing-items .doing-item .circle-text{
+    display: inline-block;
+    width: 465px;
+    font-size: 15px;
+    text-align: justify;
+    vertical-align: top;
+}
+
+
+/*cat*/
+
+
+.cat .cat-wrap{
+    text-align-last: justify;
+    padding: 20px 0 10px 50px;
+
+}
+
+.cat .cat-wrap .cat-img{
+    display: inline-block;
+    width: 160px;
+    height: 160px;
+    background: url('../images/cat.PNG') center / cover no-repeat;
+    border-radius: 50%;
+    vertical-align: top;
+}
+
+.cat .cat-wrap .cat-img img{
+    opacity: 0;
+}
+
+.cat .cat-wrap .cat-text{
+    display: inline-block;
+    width: 820px;
+    vertical-align: top;
+    text-align: justify;
+}
+
+
+
+
+/*footer*/
+
+footer{
+    width: 1280px;
+    margin: 0 auto;
+    background-color: #000;
+    color: #fff;
+}
+
+.contacts-wrap{
+    padding-top: 35px;
+    padding-bottom: 25px;
+}
+
+.contacts{
+    display: inline-block;
+    vertical-align: top;
+    width: 400px;
+}
+
+.contacts .contact{
+    padding-left: 20px;
+}
+
+.contacts .contact .contact-tel{
+    display: inline-block;
+    vertical-align: top;
+}
+
+.contacts .contact .contact-social{
+    display: inline-block;
+}
+
+
+.contacts .contact .contact-head{
+    font-size: 30px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.contacts .contact .contact-tel .tel-link{
+    width: 230px;
+}
+
+.contacts .contact .contact-social .social-link{
+    width: 95px;
+}
+
+.contacts .contact a{
+    display: inline-block;
+    text-decoration: none;
+    color: #fff;
+    font-size: 17px;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+
+.contacts a:hover{
+    transform: translateY(-2px);
+    color: rgb(235, 82, 11);
+    text-shadow: 1px 1px yellowgreen;
+    box-shadow:0 0 4px 4px yellowgreen;
+    border-radius: 1px;
+    transition: all 200ms;
+}
+
+.contacts .contact .social-link a{
+    text-decoration: underline;
+}
+
+.circle-lorem{
+    display: inline-block;
+    margin-left: 150px;
+    width: 355px;
+    height: 355px;
+    border-radius: 50%;
+    background-repeat: no-repeat;
+    background-size: 80% 80%, 100% 100%;
+    background-position: center center;
+    background-image: 
+        radial-gradient(closest-side circle at center, white 81%, transparent 80%),
+        radial-gradient(closest-side circle at center, transparent 85%, white 85%);
+}
+
+.circle-lorem .lorem-text{
+    padding: 0 120px;
+    padding-top: 40%;
+    font-size: 28px;
+    font-weight: 600;
+    text-align: center;
+    color: #000;
+}
+
+
+
+/*common*/
+
+.container{
+    width: 1280px;
+    padding: 0 100px;
+    margin: 0 auto;
+}
+
+.title{
+    font-size: 0;
+}
+
+.title .title-rectang{
+    display: inline-block;
+    line-height: 50px;
+    vertical-align: middle;
+    padding-left: 15px;
+    padding-right: 5px;
+    font-size: 25px;
+    font-weight: 700;
+    color: #fff;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-position: 0 0;
+    background-image: 
+        linear-gradient(#000, #000);
+}
+
+.title .title-triang{
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    vertical-align: middle;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-position: 0 0;
+    background-image: 
+        linear-gradient(to top left, transparent 50%, #000 50%);
+}

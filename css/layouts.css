@@ -1,0 +1,41 @@
+.img-anime{
+    margin: 0 auto;
+    margin-top: 50px;
+    font-size: 0;
+    width: 600px;
+    height: 400px;
+    overflow: hidden;
+    box-shadow: 0 0 20px 20px rgb(224, 68, 6, 0.5);
+}
+
+.img-anime img{
+    top: 0;
+    display: inline-block;
+    opacity: 0.9;
+    width: 600px;
+    height: 400px;
+    animation-name: img;
+    animation-duration: 60s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-direction: alternate;
+    margin-bottom: 5px;
+}
+
+@keyframes img{
+    0%{
+
+    }
+    25%{
+        transform: translateY(-400px);
+    }
+    50%{
+        transform: translateY(-800px);
+    }
+    75%{
+        transform: translateY(-1200px);
+    }
+    100%{
+        transform: translateY(-1600px);
+    }
+}
