@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Тринадцатый урок</title>
+    <link rel="stylesheet" href="../css/style.css">
+
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="head">
+                <div class="logo">
+                    <div class="logo-img"></div>
+                    <h1>Курс Front-end</h1>
+                </div>
+                <h2>Тринадцатый урок</h2>
+            </div>
+
+            <nav>
+                <a href="../index.html">главная</a>
+                <a href="targets.html">мои цели</a>
+                <a href="layouts.html">макеты</a>
+                <a href="content.html">содержание уроков</a>
+
+            </nav>
+        </header>
+
+        <main>
+            <div class="leftbar">
+                <img src="../img/main/foto.jpg" alt="foto">
+                <ul>
+                    <li><a href="first_lesson.html">первый урок</a></li>
+                    <li><a href="second_lesson.html">второй урок</a></li>
+                    <li><a href="third_lesson.html">третий урок</a></li>
+                    <li><a href="fourth_lesson.html">четвертый урок</a></li>
+                    <li><a href="fifth_lesson.html">пятый урок</a></li>
+                    <li><a href="sixth_lesson.html">шестой урок</a></li>
+                    <li><a href="seventh_lesson.html">седьмой урок</a></li>
+                    <li><a href="eighth_lesson.html">восьмой урок</a></li>
+                    <li><a href="ninth_lesson.html">девятый урок</a></li>
+                    <li><a href="tenth_lesson.html">десятый и одиннадцатый уроки</a></li>
+                    <li><a href="twelveth_lesson.html">двенадцатый урок</a></li>
+                    <li><a href="#">тринадцатый урок</a></li>
+
+
+                </ul>
+            </div>
+
+            <div class="content">
+                <div class="title">Адаптация сайта</div>
+
+                <div class="content-text">
+                    <p>
+                        Адаптивная вёрстка сайта позволяет веб-страницам автоматически подстраиваться под экраны планшетов и смартфонов.
+                    </p>
+                    <p>
+                        <span>Google</span> старается упростить пользование Интернетом для владельцев смартфонов и планшетов, отмечая в мобильной выдаче адаптированные под мобильные устройства сайты специальной пометкой «mobile-friendly». В Яндексе также работает алгоритм, который отдает предпочтение сайтам с мобильной/адаптивной версией для пользователей в мобильном поиске.
+                    </p>
+                    <p>
+                        Адаптивная вёрстка предполагает отсутствие горизонтальной полосы прокрутки и масштабируемых областей при просмотре на любом устройстве, читабельный текст и большие области для кликабельных элементов. С помощью медиазапросов <span>(@media)</span> можно управлять компоновкой и расположением блоков на странице, перестраивая шаблон таким образом, чтобы он адаптировался под разные размеры экранов устройств.
+                    </p>
+                </div>
+
+                <div class="content-text">
+                    Синтаксис медиазапроса:
+                </div>
+               
+                <div class="content-italic">
+                    @media type / condition{selector {…}}
+                </div>
+               
+                <div class="content-italic">
+                    @media type and condition{selector {…}}
+                </div>
+
+                <div class="content-text">
+                    Здесь пишется либо тип устройства, либо условие, при котором будет выполнятся медиазапрос.
+                </div>
+
+                <div class="content-text">
+                    Существуют следующие типы устройства <span>«type»</span>:
+                    <ul>
+                        <li>
+                            <span class="italic">all</span>
+                        </li>
+                        <li>
+                            <span class="italic">screen</span> – обычный экран
+                        </li>
+                        <li>
+                            <span class="italic">aural</span> – речевой браузер
+                        </li>
+                        <li>
+                            <span class="italic">print</span> – версия для печати
+                        </li>
+                        <li>
+                            <span class="italic">projector</span> – проектор, но современные проекторы не распознаются, как проекторы
+                        </li>
+                        <li>
+                            <span class="italic">handheld</span> – карманный персональный компьютер
+                        </li>
+                        <li>
+                            <span class="italic">tv</span> – телевизоры с более низким разрешением
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="content-text">
+                    Чаще всего в типе устройства указывается значение <span>«all»</span>, но иногда <span>«print»</span>
+                </div>
+
+                <div class="content-text">
+                    А также существуют следующие условия <span>«condition»</span>:
+                    <ul>
+                        <li>
+                            <span class="italic">min-width: px</span> – минимальная ширина области просмотра
+                        </li>
+                        <li>
+                            <span class="italic">max-width: px</span> – максимальная ширина области просмотра
+                        </li>
+                        <li>
+                            <span class="italic">min-device-aspect-ratio: 16/9</span> – минимальное соотношение сторон
+                        </li>
+                        <li>
+                            <span class="italic">max-device-aspect-ratio: 16/9</span> – максимальное соотношение сторон
+                        </li>
+                        <li>
+                            <span class="italic">min-color-index: 255</span> – минимальное количество поддерживаемых цветов (на данный момент это не актуально)
+                        </li>
+                        <li>
+                            <span class="italic">min-device-width(px, px)</span> – минимальная ширина самого устройства
+                        </li>
+                        <li>
+                            <span class="italic">max-device-width(px, px)</span> – максимальная ширина самого устройства
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="content-text">
+                    Но чаще всего применяются условия <span>«min-width»</span> и <span>«max-width»</span>, а также есть еще свойства, которые часто используются на практике – это <span>«min-height»</span> и <span>«max-height»</span>.
+                </div>
+
+                <div class="content-text">
+                    Поскольку многие браузеры адаптируют сайт сами под устройства, но это приводит к не очень хорошим результатам, поэтому необходимо использовать мета-тег <span>«meta tag adaptive»</span>:
+                </div>
+
+                <div class="content-italic">
+                    <"meta name="viewport" content="width=device-width, initial-scale=1">
+                </div>
+
+                <div class="content-text">
+                    Этот тег говорит о том, что не надо адаптировать автоматически наш сайт.
+                </div>
+
+                <div class="content-text">
+                    Есть два подхода адаптации сайта: 
+                    <ol>
+                        <li>
+                            Когда адаптируем от минимального к максимальному размеру
+                        </li>
+                        <li>
+                            Когда адаптируем от максимального к минимальному размеру
+                        </li>
+                    </ol>
+                </div>
+
+                <div class="content-text">
+                    Главное правило адаптации – это не пытаться адаптировать всю страницу, лучше работать секциями.
+                </div>
+
+                <h3 class="subtitle">Пример адаптации форм</h3>
+
+                <div class="content-text">
+                    Пусть нам необходимо расположить «button» справа на большом экране, как показано на рисунке
+                </div>
+
+                <div class="content-text">
+                    <img class="img-medium" src="../img/concpect/lesson13/figure1.JPG" alt="figure1">
+                </div>
+
+                <div class="content-text">
+                    Для мобильной версии необходимо «button» расположить сверху, как показано на рисунке
+                </div>
+
+                <div class="content-text">
+                    <img class="img-medium" src="../img/concpect/lesson13/figure2.JPG" alt="figure2">
+                </div>
+
+                <div class="content-text">
+                    В данном случае можно применить такой подход, где вначале расположить эти кнопки сразу вверху, но для компьютерной версии с помощью свойства «position: absolute» установим кнопки справа. Для мобильной версии просто ставим свойство «position» в значение «static», и они сразу установятся вверху.
+                </div>
+        </main>
+
+        <footer>
+            Логинова Екатерина &copy
+        </footer>
+    </div>
+</body>
+</html>
