@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Четырнадцатый урок</title>
+    <link rel="stylesheet" href="../css/style.css">
+
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="head">
+                <div class="logo">
+                    <div class="logo-img"></div>
+                    <h1>Курс Front-end</h1>
+                </div>
+                <h2>Четырнадцатый урок</h2>
+            </div>
+
+            <nav>
+                <a href="../index.html">главная</a>
+                <a href="targets.html">мои цели</a>
+                <a href="layouts.html">макеты</a>
+                <a href="content.html">содержание уроков</a>
+
+            </nav>
+        </header>
+
+        <main>
+            <div class="leftbar">
+                <img src="../img/main/foto.jpg" alt="foto">
+                <ul>
+                    <li><a href="first_lesson.html">первый урок</a></li>
+                    <li><a href="second_lesson.html">второй урок</a></li>
+                    <li><a href="third_lesson.html">третий урок</a></li>
+                    <li><a href="fourth_lesson.html">четвертый урок</a></li>
+                    <li><a href="fifth_lesson.html">пятый урок</a></li>
+                    <li><a href="sixth_lesson.html">шестой урок</a></li>
+                    <li><a href="seventh_lesson.html">седьмой урок</a></li>
+                    <li><a href="eighth_lesson.html">восьмой урок</a></li>
+                    <li><a href="ninth_lesson.html">девятый урок</a></li>
+                    <li><a href="tenth_lesson.html">десятый и одиннадцатый уроки</a></li>
+                    <li><a href="twelveth_lesson.html">двенадцатый урок</a></li>
+                    <li><a href="thirteenth_lesson.html">тринадцатый урок</a></li>
+                    <li><a href="#">четырнадцатый урок</a></li>
+
+                </ul>
+            </div>
+
+            <div class="content">
+                <div class="title">Приемы в CSS</div>
+
+                <h3 class="subtitle">Многоуровневое меню</h3>
+
+                <div class="content-text">
+                    Основной идеей создания многоуровневого меню является использование вложенных друг в друга списков «ul». Главный список – это список классом «ul.menu», где элементы списка «li», в котором находится еще один список (подменю) с классом «ul.submenu». для того, чтобы при наведении на элемент списка «menu» появлялось подменю, мы задаем для «ul.submenu» свойство «display: none». И при псевдоклассе «:hover» список «ul.submenu» устанавливало свойство «display:block».
+                </div>
+
+                <h3 class="subtitle">Бургер-крестик анимация</h3>
+
+                <div class="content-text">
+                    <p>
+                        Основной идеей такой анимации является создания элемента (помощью свойства «border» создается рамка бургера), для которого создается псевдоэлемент «::before» (одна черточка). И для этого псевдоэлемента с помощью свойства «box-shadow» создается другая черточка (вторая черточка). И, наконец, третья черточка создается с помощью псевдоэлемнта «::after». 
+                    </p>
+                    <p>
+                        Для того, чтобы происходила анимация при наведении на бургер, необходимо для верхней и нижней черточек использовать свойства «transform: translate» «transform: rotate», при этом средняя черточка прячется с помощью отмены свойства «box-shadow».
+                    </p>
+                </div>
+
+                <h3 class="subtitle">Обрезание блока по координатам «clip-path»</h3>
+
+                <div class="content-text">
+                    Такой прием реализуется (например, картинка) благодаря свойству «clip-path: polygon(x1 y1, x2 y2…(%))»
+                </div>
+
+                <div class="content-text">
+                    <img class="img-medium" src="../img/concpect/lesson14/сlip-path.JPG" alt="сlip-path">
+                </div>
+
+                <h3 class="subtitle">Выезжающая боковая панель</h3>
+
+                <div class="content-text">
+                    Основной идеей такого подхода является задаем свойства для меню, когда оно еще не выехало – «position: fixed», «top:0», «bottom» и смещаем его на всю ширину меню, оставляя где-то 10рх в пределах экрана. Когда меню выехало задаем «left:0». Ну и в конце, задаем псевдокласс «:hover» на само меню, и теперь при наведении мыши на край меню, который остался в пределах экрана, меню выезжает на экран.
+                </div>
+
+                <h3 class="subtitle">Эффект «paralax»</h3>
+
+                <div class="content-text">
+                   <p>
+                        Здесь создается контейнер, которому задаются такие свойства: «height: 100vh» «position: relative» «overflow-x: hidden» «overflow-y: auto/scroll» «perspective:1px»
+                   </p>
+                   <p>
+                        После этого с помощью псевдоэлемента создается фон контейнеру такими свойствами: «position: absolute» «left:0» «right:0» «top:0» «bottom: 0» «background-image» «transform: translate(-5px) scale(n)»
+                   </p>
+                   <p>
+                        Но для того, чтобы фон ушел на самый задний план необходимо сверх лежащему контенту задать «z-index: 1».
+                   </p>
+                </div>
+
+        </main>
+
+        <footer>
+            Логинова Екатерина &copy
+        </footer>
+    </div>
+</body>
+</html>
