@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Пятнадцатый урок</title>
+    <link rel="icon" href="../img/favicon.ico" type="image/x-icon">
+
+    <link rel="stylesheet" href="../css/style.css">
+
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="head">
+                <div class="logo">
+                    <div class="logo-img"></div>
+                    <h1>Курс Front-end</h1>
+                </div>
+                <h2>Пятнадцатый урок</h2>
+            </div>
+
+            <nav>
+                <a href="../index.html">главная</a>
+                <a href="targets.html">мои цели</a>
+                <a href="layouts.html">макеты</a>
+                <a href="content.html">содержание уроков</a>
+
+            </nav>
+        </header>
+
+        <main>
+            <div class="leftbar">
+                <img src="../img/main/foto.jpg" alt="foto">
+                <ul>
+                    <li><a href="first_lesson.html">первый урок</a></li>
+                    <li><a href="second_lesson.html">второй урок</a></li>
+                    <li><a href="third_lesson.html">третий урок</a></li>
+                    <li><a href="fourth_lesson.html">четвертый урок</a></li>
+                    <li><a href="fifth_lesson.html">пятый урок</a></li>
+                    <li><a href="sixth_lesson.html">шестой урок</a></li>
+                    <li><a href="seventh_lesson.html">седьмой урок</a></li>
+                    <li><a href="eighth_lesson.html">восьмой урок</a></li>
+                    <li><a href="ninth_lesson.html">девятый урок</a></li>
+                    <li><a href="tenth_lesson.html">десятый и одиннадцатый уроки</a></li>
+                    <li><a href="twelveth_lesson.html">двенадцатый урок</a></li>
+                    <li><a href="thirteenth_lesson.html">тринадцатый урок</a></li>
+                    <li><a href="fifteenth_lesson.html">четырнадцатый урок</a></li>
+                    <li><a href="#">пятнадцатый урок</a></li>
+
+                </ul>
+            </div>
+
+            <div class="content">
+                <div class="title">Flexbox</div>
+
+                <h3 class="subtitle">Основные используемые теги</h3>
+
+                <div class="content-text">
+                    <span>«header»</span> – шапка
+                </div>
+
+                <div class="content-text">
+                    <span>«footer»</span> – подвал
+                </div>
+                <div class="content-text">
+                    <span>«section»</span> – секция
+                </div>
+                <div class="content-text">
+                    <span>«article»</span> – статья, заметка используется в сайтах со статьями, новостями
+                </div>
+                <div class="content-text">
+                    <span>«nav»</span> – навигационная панель
+                </div>
+                <div class="content-text">
+                    <span>«aside»</span> – боковая панель
+                </div>
+                <div class="content-text">
+                    <span>«figure»</span> – фигура, составной элемент, состоящий из нескольких элементов
+                </div>
+                <div class="content-text">
+                    <span>«figcaption»</span> – заголовок составной фигуры, находится внутри тега «figure»
+                </div>
+                <div class="content-text">
+                    <span>«hgroup»</span> – группа заголовков, используется тогда, когда необходимо сгруппировать несколько заголовков «h»
+                </div>
+                <div class="content-text">
+                    <span>«time»</span> – метка времени, используется тогда, когда необходимо указать дату и время события. Для данного тега используется атрибут «datetime»
+                </div>
+
+                <h3 class="subtitle">«Flexbox»</h3>
+
+                <div class="content-text">
+                    «Flexbox» появился в CSS3 – это новый способ верстки страницы без использования «block», «inline-block» и др. Существует два значения свойства «display», относящиеся к методике «flexbox» и описывают поведения flex-элементов:
+
+                    <ul>
+                        <li><span class="italic">«display: flex»</span></li>
+                        <li><span class="italic">«display: inline-flex»</span></li>
+                    </ul>
+                    Если у элемента установлено значение «flex» (flex-контейнер), то сам элемент ведет себя, как «block», а его внутренние элементы, как «flex». Если же элементу установлено значение «inline-flex», то сам элемент ведет себя, как и «inline-block», а его внутренние элементы, тоже как «flex».
+                </div>
+
+                <div class="content-text" style="text-align: center;">
+                    Модель «Flexbox»
+                </div>
+
+                <div class="content-text">
+                    <img class="img-medium" src="../img/concpect/lesson15/flexbox.JPG" alt="flexbox">
+                </div>
+
+                <div class="content-text">
+                    Главная ось <span>(main axis)</span> — ось, вдоль которой выкладываются flex-элементы. Она простирается в основном измерении.
+                </div>
+                <div class="content-text">
+                    <span>Main start</span> и <span>main end</span> — линии, которые определяют начальную и конечную стороны flex-контейнера, относительно которых выкладываются flex-элементы (начиная с main start по направлению к main end).
+                </div>
+                <div class="content-text">
+                    Основной размер <span>(main size)</span> — ширина или высота flex-контейнера или flex-элементов, в зависимости от того, что из них находится в основном измерении, определяют основной размер flex-контейнера или flex-элемента.
+                </div>
+                <div class="content-text">
+                    Поперечная ось <span>(cross axis)</span> — ось, перпендикулярная главной оси. Она простирается в поперечном измерении.
+                </div>
+                <div class="content-text">
+                    <span>Cross start</span> и <span>cross end</span> — линии, которые определяют начальную и конечную стороны поперечной оси, относительно которых выкладываются flex-элементы.
+                </div>
+                <div class="content-text">
+                    Поперечный размер <span>(cross size)</span> — ширина или высота flex-контейнера или flex-элементов, в зависимости от того, что находится в поперечном измерении, являются их поперечным размером.
+                </div>
+                <div class="content-text">
+                    Направление расположения элементов внутри flex-контейнера задается с помощью свойства «flex-direction», которое задается flex-контейнеру. Значения свойства «flex-direction»:
+
+                    <ul>
+                        <li>
+                            <span>«row»</span> – элементы располагаются стандартным образом, т.е. слева-направо, затем сверху-вниз
+                        </li>
+                        <li>
+                            <span>«row-reverse»</span> – элементы располагаются справа-налево, затем сверху-вниз
+                        </li>
+                        <li>
+                            <span>«column»</span> – элементы располагаются сначала сверху-вниз, затем слева-направо
+                        </li>
+                        <li>
+                            <span>«column-reverse»</span> – элементы располагаются сначала снизу-вверх, затем слева-направо
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="content-text">
+                    Управление многострочностью flex-контейнера происходит с помощью свойства «flex-wrap»:
+
+                    <ul>
+                        <li>
+                            <span>«wrap»</span> – flex-элементы переносятся на новые линии
+                        </li>
+                        <li>
+                            <span>«nowrap»</span> – flex-элементы не переносятся (значение по умолчанию)
+                        </li>
+                        <li>
+                            <span>«wrap-reverse»</span> – flex-элементы переносятся на новые линии, располагаясь в обратном порядке
+                        </li>
+                    </ul>
+                </div>
+                <div class="content-text">Свойство <span>«flex-flow»</span> объединяет свойства «flex-direction» и «flex-wrap»</div>
+                <div class="content-text">
+                    Выравнивание по главной оси производится с помощью свойства <span>«justify-content»</span>. Это свойство выравнивает flex-элементы по главной оси flex-контейнера, распределяя свободное пространство, незанятое flex-элементами. Значения свойства «justify-content»:
+
+                    <ul>
+                        <li>
+                            <span>«flex-start»</span> – элементы располагаются друг за другом и прижимаются к началу контейнера по главной оси, в зависимости от её направления (flex-direction). Для элементов, которые не являются дочерними элементами flex контейнера, это значение обрабатывается как start (значение по умолчанию)
+                        </li>
+                        <li>
+                            <span>«flex-end»</span> – элементы располагаются друг за другом и прижимаются к концу контейнера по главной оси, в зависимости от её направления (flex-direction). Для элементов, которые не являются дочерними элементами flex контейнера, это значение обрабатывается как end.
+                        </li>
+                        <li>
+                            <span>«center»</span> – элементы располагаются друг за другом в центре контейнера по главной оси.
+                        </li>
+                        <li>
+                            <span>«space-between»</span> – элементы равномерно распределены вдоль главной оси контейнера. Расстояния между каждой парой соседних элементов равны. Первый элемент прижат к началу контейнера по главной оси, а последний - к концу.
+                        </li>
+                        <li>
+                            <span>«space-around»</span> – элементы равномерно распределены вдоль главной оси контейнера. Расстояния между каждой парой соседних элементов равны. Пустые пространства перед первым элементом и после последнего элемента равны половине расстояния между парами соседних элементов.
+                        </li>
+                        <li>
+                            <span>«space-evenly»</span> – элементы равномерно распределены вдоль главной оси контейнера. Расстояния между каждой парой соседних элементов равны расстояниям от начала контейнера до первого элемента и от последнего элемента до конца контейнера.
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="content-text">
+                    <img class="img-medium" src="../img/concpect/lesson15/justify-content.jpg" alt="justify-content">
+                </div>
+
+                <div class="content-text">
+                    Свойство <span>«align-items»</span> располагает flex-элементы в одном проходе главной оси. Имеет следующие значения:
+
+                    <ul>
+                        <li>
+                            <span>«flex-start»</span> – flex-элементы выравниваются в начале поперечной оси контейнера.
+                        </li>
+                        <li>
+                            <span>«flex-end»</span> – flex-элементы выравниваются в конце поперечной оси контейнера.
+                        </li>
+                        <li>
+                            <span>«center»</span> – flex-элементы выравниваются по линии поперечной оси.
+                        </li>
+                        <li>
+                            <span>«baseline»</span> – flex-элементы выравниваются по их базовой линии.
+                        </li>
+                        <li>
+                            <span>«stretch»</span> – flex-элементы растягиваются таким образом, чтобы занять всё доступное пространство контейнера.
+                        </li>
+                    </ul>
+                </div>
+                
+                <div class="content-text">
+                    <img class="img-medium" src="../img/concpect/lesson15/align-items.JPG" alt="align-items">
+                </div>
+
+                <div class="content-text">
+                    Свойство <span>«align-content»</span> выравнивает строки в flex-контейнере при наличии дополнительного пространства на поперечной оси, аналогично выравниванию отдельных элементов на главной оси с помощью свойства justify-content. Свойство не влияет на однострочный flex-контейнер. Значения свойства:
+
+                    <ul>
+                        <li>
+                            <span>«flex-start»</span> – строки располагаются в начале поперечной оси. Каждая следующая строка идёт вровень с предыдущей
+                        </li>
+                        <li>
+                            <span>«flex-end»</span> – строки располагаются начиная с конца поперечной оси. Каждая предыдущая строка идёт вровень со следующей.
+                        </li>
+                        <li>
+                            <span>«center»</span> – строки располагаются по центру контейнера.
+                        </li>
+                        <li>
+                            <span>«space-between»</span> – строки равномерно распределяются в контейнере и край первой строки помещается вплотную к начальному краю содержимого flex-контейнера, край последней строки — вплотную к конечному краю содержимого flex-контейнера. Остальные строки распределены так, чтобы расстояние между любыми двумя соседними строками было одинаковым.
+                        </li>
+                        <li>
+                            <span>«space-around»</span> – cтроки равномерно распределены в flex-контейнере с половинным пробелом на обоих концах, причем строки распределяются таким образом, чтобы расстояние между любыми двумя соседними строками было одинаковым, а расстояние между первой/последней строками и краями содержимого flex-контейнера составляло половину от расстояния между строками.
+                        </li>
+                        <li>
+                            <span>«stretch»</span> – строки flex-элементов равномерно растягиваются, заполняя все доступное пространство, которое будет разделено поровну между всеми строками, увеличивая их поперечный размер.
+                        </li>
+                        <li>
+                            <span>«space-evenly»</span> – строки равномерно распределяются таким образом, чтобы пространство между двумя соседними строками, а также пространство перед первой строкой и после последней строки было одинаковым.
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="content-text">
+                    <img class="img-medium" src="../img/concpect/lesson15/align-content.JPG" alt="align-content">
+                </div>
+
+                <div class="content-text">
+                    Свойства для элементов, находящихся внутри flex-контейнера:
+
+                    <ul>
+                        <li>
+                            <span>«flex-grow»</span> – свойство определяет коэффициент роста одного flex-элемента относительно других flex-элементов в flex-контейнере. Значение задается, как число положительное целое или дробное число, устанавливающее коэффициент роста flex-элемента (значение по умолчанию 0).
+                        </li>
+                        <li>
+                            <span>«order»</span> – свойство определяет порядок, в котором flex-элементы отображаются и располагаются внутри flex-контейнера
+                        </li>
+                        <li>
+                            <span>«flex-basis»</span> – определяет начальный размер flex-элемента
+                        </li>
+                        <li>
+                            <span>«flex-shrink»</span> – определяет, как flex-элемент будет уменьшаться относительно других flex-элементов во flex-контейнере
+                        </li>
+                        <li>
+                            <span>«align-self»</span> – позволяет переопределить это выравнивание для отдельных flex-элементов, аналогичен свойству «align-items»
+                        </li>
+                    </ul>
+                </div>
+        </main>
+
+        <footer>
+            Логинова Екатерина &copy
+        </footer>
+    </div>
+</body>
+</html>

@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin</title>
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="fonts/fonts.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <div class="logo">Innovation<span>ADM</span></div>
+        <nav class="head-nav">
+            <div class="burger burger-head">
+                <div class="menu-appear menu-header">
+                    <div class="administrator administrator-appear">
+                        <div class="administrator-img">
+                            <img src="img/icons/administrator.jpg" alt="administrator">
+                        </div>
+                        <div class="administrator-text">
+                            <div class="text">Administrator</div>
+                            <div class="online">online</div>
+                        </div>
+                    </div>
+    
+                    <div class="appear-title">main navigation</div>
+    
+                    <ul class="menu-list">
+                        <li>Admins</li>
+                        <li>Users</li>
+                        <li>Cards</li>
+                        <li>Categories</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="head-icons">
+                <div class="icon-cards icon">
+                    <img src="img/icons/bank-cards.png" alt="bank_cards">
+                </div>
+                <div class="icon-users icon">
+                    <img src="img/icons/users.png" alt="users">
+                </div>
+                <div class="icon-admins icon">
+                    <img src="img/icons/admins.png" alt="admins">
+                </div>
+                <div class="administrator">
+                    <div class="administrator-img">
+                        <img src="img/icons/administrator.jpg" alt="administrator">
+                    </div>
+                    <div class="administrator-text admintext-header">Administrator</div>
+                </div>
+            </div>
+        </nav>
+
+    </header>
+
+    <section class="main">
+        <div class="leftbar">
+            <div class="burger burger-profile"></div>
+
+            <div class="leftbar-icons">
+                <div class="icon-admins icon">
+                    <img src="img/icons/admins.png" alt="admins">
+                </div>
+                <div class="icon-users icon">
+                    <img src="img/icons/users.png" alt="users">
+                </div>
+                <div class="icon-cards icon">
+                    <img src="img/icons/bank-cards.png" alt="bank_cards">
+                </div>
+                <div class="icon-category icon">
+                    <img src="img/icons/categorize.png" alt="categorize">
+                </div>
+            </div>
+
+            <div class="menu-appear menu-profile">
+                <div class="administrator administrator-appear">
+                    <div class="administrator-img">
+                        <img src="img/icons/administrator.jpg" alt="administrator">
+                    </div>
+                    <div class="administrator-text">
+                        <div class="text">Administrator</div>
+                        <div class="online">online</div>
+                    </div>
+                </div>
+
+                <div class="appear-title">main navigation</div>
+
+                <ul class="menu-list">
+                    <li>Admins</li>
+                    <li>Users</li>
+                    <li>Cards</li>
+                    <li>Categories</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="content">
+            <div class="profile">
+                
+                
+                <div class="profile-head">
+                    <div class="title">Profile</div>
+                    <div class="profile-path">
+                        <div class="icon">
+                            <img src="img/icons/admins.png" alt="admins">
+                        </div>
+                        <div class="path">Admin > Profile</div>
+                    </div>
+                </div>
+
+                <div class="profile-forms">
+                    <div class="form-edit">
+                        <div class="form-title">Edit Username</div>
+                        <form action="#" method="get" class="form-input">
+                            <div class="input-name">New Username</div>
+                            <input type="text" required placeholder="Username" class="input">
+    
+                            <div class="input-name">Password</div>
+                            <input type="pass" required placeholder="Password" class="input">
+    
+                            <input type="submit" id="submit-name">
+                            <label for="submit-name" class="button">submit</label>
+                        </form>
+                    </div>
+                    <div class="form-edit">
+                        <div class="form-title">Edit Email</div>
+                        <form action="#" method="get" class="form-input">
+                            <div class="input-name">New Email</div>
+                            <input type="email" required placeholder="Email" class="input">
+    
+                            <div class="input-name">Password</div>
+                            <input type="pass" required placeholder="Password" class="input">
+    
+                            <input type="submit" id="submit-email">
+                            <label for="submit-email" class="button">submit</label>
+                        </form>
+                    </div>
+                    <div class="form-edit">
+                        <div class="form-title">Edit Password</div>
+                        <form action="#" method="get" class="form-input">
+                            <h4 class="input-name">Old Password</h4>
+                            <input type="pass" required placeholder="Password" class="input">
+    
+                            <div class="input-name">New Password</div>
+                            <input type="pass" required placeholder="Password" class="input">
+    
+                            <div class="input-name">Confirm Password</div>
+                            <input type="pass" required placeholder="Password" class="input">
+    
+                            <input type="submit" id="submit-pass">
+                            <label for="submit-pass" class="button">submit</label>
+                        </form>
+                    </div>
+                    <div class="form-edit">
+                        <div class="form-title">Edit Image</div>
+                        <form action="#" method="get" class="form-input">
+                            
+                            <input type="file" accept="images/*" id="file" >
+                            <input type="submit" id="submit-file">
+    
+                            <div class="label">
+                                <label for="file" class="button button-file">Please open the image</label>
+                                <div><label for="submit-file" class="button">submit</label></div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+  
+            </div>
+
+            <div class="footer">
+                <div class="develop">Develop by <span>on Create Studio 2015</span></div>
+                <div class="version">Version 1.0</div>
+            </div>
+        </div>
+    </section>
+
+</body>
+</html>

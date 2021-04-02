@@ -16,7 +16,7 @@
     width: 500px;
     height: 400px;
     animation-name: img;
-    animation-duration: 20s;
+    animation-duration: 25s;
     animation-iteration-count: infinite;
     animation-timing-function: linear;
     animation-direction: alternate;
@@ -27,22 +27,25 @@
     0%{
 
     }
-    16.666%{
+    14.3%{
         transform: translateY(-400px);
     }
-    33.333%{
+    28.6%{
         transform: translateY(-800px);
     }
-    49.999%{
+    42.9%{
         transform: translateY(-1200px);
     }
-    66.666%{
+    57.2%{
         transform: translateY(-1600px);
     }
-    83.333%{
+    71.5%{
         transform: translateY(-2000px);
     }
-    100%{
+    85.8%{
         transform: translateY(-2400px);
+    }
+    100%{
+        transform: translateY(-2800px);
     }
 }
