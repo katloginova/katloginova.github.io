@@ -109,8 +109,8 @@
 
 @media screen and (max-width: 640px){
     .button{
-        font-size: 31px;
-        line-height: 40px;
+        font-size: 22px;
+        line-height: 35px;
     }
 }
 
@@ -267,7 +267,10 @@ header .menu .gamburger span:first-child{
     }
     header .menu .gamburger span{
         display: block;
+        height: 4px;
+        margin-bottom: 6px;
     }
+
 }
 
 @media screen and (max-width: 640px){
@@ -359,13 +362,17 @@ header .menu .gamburger span:first-child{
 
 @media screen and (max-width:1100px){
     .slider .slider-content{
-        padding: 40px 10px 0 10px;
+        padding: 0;
+        padding-top: 40px;
     }
     .slider .title{
         font-size: 31px;
     }
     .slider .slider-content .slider-img{
         max-width: 200px;
+    }
+    .slider .slider-content .slider-img img{
+        width: 100%;
     }
     .slider .slider-content .slider-describe{
         max-width: 300px;
@@ -386,13 +393,16 @@ header .menu .gamburger span:first-child{
     }
 }
 
-@media screen and (max-width: 640px){
+/* @media screen and (max-width: 640px){
     .slider .slider-content .slider-img{
-        max-width: 175px;
+        max-width: 200px;
     }
-}
+} */
 
 @media screen and (max-width: 575px){
+    .slider .container{
+        padding: 0;
+    }
     .slider .slider-content .slider-img{
         max-width: 150px;
     }
@@ -474,9 +484,22 @@ header .menu .gamburger span:first-child{
 
 /*adaptive contrary*/
 
+
 @media screen and (max-width: 1100px){
     .contrary .contrary-content{
         padding: 75px 0 55px 0;
+    }
+    .contrary-content .content-item .item-circle{
+        display: inline-block;
+        width: 136px;
+        height: 136px;
+    }
+    .content-item .item-circle .item-img{
+        top: calc(50% - 40px);
+        left: calc(50% - 40px);
+        width: 80px;
+        height: 80px;
+        background-size: contain;
     }
 }
 
@@ -491,18 +514,6 @@ header .menu .gamburger span:first-child{
         margin-bottom: 0;
         margin-top: 40px;
     }
-    .contrary-content .content-item .item-circle{
-        display: inline-block;
-        width: 136px;
-        height: 136px;
-    }
-    .content-item .item-circle .item-img{
-        top: calc(50% - 40px);
-        left: calc(50% - 40px);
-        width: 80px;
-        height: 80px;
-        background-size: contain;
-    }
     .content-item .item-text{
         display: inline-block;
         vertical-align: top;
@@ -510,7 +521,7 @@ header .menu .gamburger span:first-child{
         margin-left: 25px;
     }
     .content-item .item-text .item-title{
-        font-size: 34px;
+        font-size: 30px;
         font-weight: 600;
         line-height: 34px;
     }
@@ -522,12 +533,24 @@ header .menu .gamburger span:first-child{
 }
 
 @media screen and (max-width: 575px){
+    .contrary-content .content-item .item-circle{
+        width: 100px;
+        height: 100px;
+    }
+    .content-item .item-circle .item-img{
+        top: calc(50% - 30px);
+        left: calc(50% - 30px);
+        width: 60px;
+        height: 60px;
+    }
     .content-item .item-text{
         max-width: 250px;
     }
     .content-item .item-text .item-title{
         font-size: 25px;
         line-height: 30px;
+        padding: 0;
+
     }
     .content-item .item-text .item-describe{
         font-size: 15px;
@@ -557,6 +580,10 @@ header .menu .gamburger span:first-child{
     padding-top: 20px;
     margin-right: 10px;
     vertical-align: middle;
+}
+
+.shopping-wrap .shopping-content .shopping-img img{
+    width: 100%;
 }
 
 .shopping-wrap .shopping-content .shopping-describe{
@@ -603,10 +630,13 @@ header .menu .gamburger span:first-child{
 
 @media screen and (max-width: 640px){
     .shopping .shopping-wrap{
-        padding-top: 60px;
+        padding: 60px 0;
     }
     .shopping .shopping-wrap .shopping-content{
         padding-top: 15px;
+    }
+    .shopping-wrap .shopping-content .shopping-img{
+        width: 300px;
     }
     .shopping-wrap .shopping-content .shopping-describe{
         width: 450px;
