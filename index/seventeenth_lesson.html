@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Семнадцатый урок</title>
+    <link rel="icon" href="../img/favicon.ico" type="image/x-icon">
+
+    <link rel="stylesheet" href="../css/style.css">
+
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <div class="head">
+                <div class="logo">
+                    <div class="logo-img"></div>
+                    <h1>Курс Front-end</h1>
+                </div>
+                <h2>Семнадцатый урок</h2>
+            </div>
+
+            <nav>
+                <a href="../index.html">главная</a>
+                <a href="targets.html">мои цели</a>
+                <a href="layouts.html">макеты</a>
+                <a href="content.html">содержание уроков</a>
+
+            </nav>
+        </header>
+
+        <main>
+            <div class="leftbar">
+                <img src="../img/main/foto.jpg" alt="foto">
+                <ul>
+                    <li><a href="first_lesson.html">первый урок</a></li>
+                    <li><a href="second_lesson.html">второй урок</a></li>
+                    <li><a href="third_lesson.html">третий урок</a></li>
+                    <li><a href="fourth_lesson.html">четвертый урок</a></li>
+                    <li><a href="fifth_lesson.html">пятый урок</a></li>
+                    <li><a href="sixth_lesson.html">шестой урок</a></li>
+                    <li><a href="seventh_lesson.html">седьмой урок</a></li>
+                    <li><a href="eighth_lesson.html">восьмой урок</a></li>
+                    <li><a href="ninth_lesson.html">девятый урок</a></li>
+                    <li><a href="tenth_lesson.html">десятый и одиннадцатый уроки</a></li>
+                    <li><a href="twelveth_lesson.html">двенадцатый урок</a></li>
+                    <li><a href="thirteenth_lesson.html">тринадцатый урок</a></li>
+                    <li><a href="fourteenth_lesson.html">четырнадцатый урок</a></li>
+                    <li><a href="fifteenth_lesson.html">пятнадцатый урок</a></li>
+                    <li><a href="sixteenth_lesson.html">шестнадцатый урок</a></li>
+                    <li><a href="#">семнадцатый урок</a></li>
+
+                </ul>
+            </div>
+
+            <div class="content">
+                <div class="title">Препроцессоры LESS и SASS</div>
+
+                <div class="content-text">
+                    Препроцессор — это программа, которая берёт один тип данных и преобразует его в другой тип данных.
+                    Основная задача препроцессора — это предоставление удобных синтаксических конструкций для
+                    разработчика, чтобы упростить, и тем самым, ускорить разработку и поддержу стилей в проектах. Два
+                    найболее популярный на данный момент CSS-препроцессоров – это <span>LESS</span> и <span>SCSS</span>.
+                </div>
+
+                <div class="content-text">
+                    <span>LESS</span> имеет все базовые возможности препроцессоров и даже больше, но не имеет условных конструкций и циклов в привычном для нас понимании. Основным плюсом является его простота, практически стандартный для CSS синтаксис и возможность расширения функционала за счёт системы плагинов.
+                </div>
+
+                <div class="content-text">
+                    <span>SASS (SCSS)</span> самый мощный из CSS-препроцессоров. Имеет куда больший ассортимент возможностей в сравнении с Less. Возможности самого препроцессора расширяются за счёт многофункциональной библиотеки Compass, которая позволяет выйти за рамки CSS.
+                </div>
+
+                <h3 class="subtitle">Установка пакетов LESS и SCSS</h3>
+
+                <div class="content-text">
+                    Если необходимо установить глобально, то используется команда («sudo» используется для Mac и Linux, означает от имени администратора):
+                </div>
+
+                <div class="content-italic">
+                    npm i less -g (sudo npm i less -g)
+                </div>
+
+                <div class="content-italic">
+                    npm i sass -g (sudo npm i scss -g)
+                </div>
+
+                <div class="content-text">
+                    Для того, чтобы при написании кода в LESS автоматически сразу компилировался код в CSS, необходимо установить пакет «watch»:
+                </div>
+
+                <div class="content-italic">
+                    npm i less-watch-compiler -g
+                </div>
+
+                <div class="content-text">
+                    Теперь для того, чтобы запустить компилятор используется следующая команда в основной папке проекта:
+                </div>
+
+                <div class="content-italic">
+                    less-watch-compiler less css  
+                </div>
+                <div class="content-italic">
+                    sass – watch scss:css
+                </div>
+
+                <div class="content-text">
+                    где less/scss(откуда папка), css(куда папка)
+                </div>
+
+                <div class="content-text">
+                    Для того, чтобы подсвечивался синтаксис кода стилей (LESS или SCSS) необходимо установить плагин LESS или SCSS.
+                </div>
+                <div class="content-text">
+                    В данных препроцессорах можно использовать переменные, миксины (функции), условия и др., более подробно об использовании и синтаксисе можно прочитать в официальной документации <a href=" http://lesscss.org/"> http://lesscss.org/</a> – по LESS, <a href="https://sass-lang.com/ – по SASS">https://sass-lang.com/ – по SASS</a>.
+                </div>
+
+            </div>
+
+        </main>
+
+        <footer>
+            Логинова Екатерина &copy
+        </footer>
+    </div>
+</body>
+
+</html>
