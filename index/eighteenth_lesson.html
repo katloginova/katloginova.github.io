@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Восемнадцатый урок</title>
+    <link rel="icon" href="../img/favicon.ico" type="image/x-icon">
+
+    <link rel="stylesheet" href="../css/style.css">
+
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <div class="head">
+                <div class="logo">
+                    <div class="logo-img"></div>
+                    <h1>Курс Front-end</h1>
+                </div>
+                <h2>Восемнадцатый урок</h2>
+            </div>
+
+            <nav>
+                <a href="../index.html">главная</a>
+                <a href="targets.html">мои цели</a>
+                <a href="layouts.html">макеты</a>
+                <a href="content.html">содержание уроков</a>
+
+            </nav>
+        </header>
+
+        <main>
+            <div class="leftbar">
+                <img src="../img/main/foto.jpg" alt="foto">
+                <ul>
+                    <li><a href="first_lesson.html">первый урок</a></li>
+                    <li><a href="second_lesson.html">второй урок</a></li>
+                    <li><a href="third_lesson.html">третий урок</a></li>
+                    <li><a href="fourth_lesson.html">четвертый урок</a></li>
+                    <li><a href="fifth_lesson.html">пятый урок</a></li>
+                    <li><a href="sixth_lesson.html">шестой урок</a></li>
+                    <li><a href="seventh_lesson.html">седьмой урок</a></li>
+                    <li><a href="eighth_lesson.html">восьмой урок</a></li>
+                    <li><a href="ninth_lesson.html">девятый урок</a></li>
+                    <li><a href="tenth_lesson.html">десятый и одиннадцатый уроки</a></li>
+                    <li><a href="twelveth_lesson.html">двенадцатый урок</a></li>
+                    <li><a href="thirteenth_lesson.html">тринадцатый урок</a></li>
+                    <li><a href="fourteenth_lesson.html">четырнадцатый урок</a></li>
+                    <li><a href="fifteenth_lesson.html">пятнадцатый урок</a></li>
+                    <li><a href="sixteenth_lesson.html">шестнадцатый урок</a></li>
+                    <li><a href="seventeenth_lesson.html">семнадцатый урок</a></li>
+                    <li><a href="#">восемнадцатый урок</a></li>
+
+                </ul>
+            </div>
+
+            <div class="content">
+                <div class="title">Сборщик задач Gulp</div>
+
+                <div class="content-text">
+                   <p>
+                        <span>Gulp</span> – это таск-менеджер для автоматического выполнения часто используемых задач (например, минификации, тестирования, объединения файлов), написанный на языке программирования JavaScript. Программное обеспечение использует командную строку для запуска задач, определённых в файле <span>gulpfile.js</span>.
+                   </p>
+                   <p>
+                        Для начала разобьём наш проект на две части: исходный код (src) и результирующий (dist), который получен путем компиляции при помощи gulp.
+                   </p>
+                   <p>
+                        Устанавка утилиты командной строки «gulp»:
+                   </p>
+                </div>
+
+                <div class="content-italic">
+                    npm i -g gulp-cli
+                </div>
+                <div class="content-text">
+                    Для того, чтобы сделать инициализацию проекта используется команда (делается это один раз «за всю жизнь» проекта) внутри папки проекта:
+                </div>
+                <div class="content-italic">
+                    npm init
+                </div>
+                <div class="content-text">
+                    В результате инициализации появится целый ряд вопросов, на которые необходимо ответить, чтобы сконфигурировать node.js в проекте:
+                    <ul>
+                        <li>
+                            Имя проекта/пакета
+                        </li>
+                        <li>
+                            Версия приложения
+                        </li>
+                        <li>
+                            Описание
+                        </li>
+                        <li>
+                            Точка входа (используется в случае, если приложение JS)
+                        </li>
+                        <li>
+                            Тестовая команда
+                        </li>
+                        <li>
+                            Git репозиторий (можно не указывать)
+                        </li>
+                        <li>
+                            Ключевые слова (используется, если выкладывается библиотека и по этим словам ищут эту библиотеку)
+                        </li>
+                        <li>
+                            Автор
+                        </li>
+                        <li>
+                            Лицензия
+                        </li>
+                        <li>
+                            Результат (сгенерированный файл «package.json») / yes
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="content-text">
+                    В файле <span>«package.json»</span> записываются все необходимые зависимости, которые используются в проекте (библиотеки, модули). Добавлять зависимости можно вручную, а можно с помощью командной строки с помощью ключа «--save-dev». Т.е. когда мы устанавливаем какой-либо npm-пакет дописываем в конце данный ключ, и тогда он автоматически впишется в файл «package.json», как зависимость.
+                </div>
+
+                <div class="content-text">
+                    Теперь перейдем к установки библиотеки сборщика задач «gulp»:
+                </div>
+                <div class="content-italic">
+                    npm i gulp –save-dev
+                </div>
+
+                <div class="content-text">
+                    После установки появится папка «node_modules», которую необходимо добавить в «.gitignore», а также файл «package-lock.json».
+                </div>
+                <div class="content-text">
+                    Но если необходимо использовать все библиотеки, которые прописаны в «package.json» на другом компьютере после скачивания проекта с удаленного репозитория, то для этого прописывается команда «npm instal».
+                </div>
+
+                <div class="content-text">
+                    Затем создадим файл конфигурации «gulp» под названием «gulpfile.js», где и будем задавать необходимые задачи для «gulp», которые помогут нам автоматизировать наш проект. В данном файле в самом начале задаются переменные, которым присваиваются устанавливаемые библиотеки или модули:
+                </div>
+                <div class="content-italic">
+                    var gulp/имя переменной/ = require(‘gulp’)/значение в данном случае библиотека «gulp»/
+                </div>
+
+                <div class="content-text">
+                    После уже задается эти переменным (библиотекам) необходимые задачи. Задаются задачи следующим образом:
+                </div>
+                <div class="content-italic">
+                    gulp.task(‘имя функции’, () => {что должно выполнятся});
+                </div>
+
+                <div class="content-text">
+                    Если «имя функции» называется «default», то его можно не прописывать в командной строке оно выполняется по умолчанию. Можно также выполнять несколько задач сразу или по очереди:
+                </div>
+
+                <div class="content-italic">
+                    gulp.task(‘default’, gulp.series(‘функция1’, ‘функция2’));  /выполняются по очереди/
+                </div>
+
+                <div class="content-italic">
+                    gulp.task(‘default’, gulp.parallel(‘функция1’, ‘функция2’));  /выполняются параллельно/
+                </div>
+
+                <div class="content-text">
+                    Теперь перейдем к конкретным задачам. Для начала зададим задачу для копирования статичных файлов из папки «src» в папку «dist» следующим образом:
+                </div>
+
+                <div class="content-italic">
+                    gulp.task('copy-html', ()=> {<br>
+                         return gulp.src('src/**/*.html'). <br>
+                            pipe(gulp.dest('dist/.')); <br>
+                    });
+                    
+                </div>
+
+
+
+
+                <h3 class="subtitle">Установка пакетов LESS и SCSS</h3>
+
+                <div class="content-text">
+
+                </div>
+
+
+
+                <div class="content-text">
+                </div>
+
+
+
+                <div class="content-text">
+                </div>
+
+                <div class="content-italic">
+                </div>
+                <div class="content-italic">
+                </div>
+
+                <div class="content-text">
+                </div>
+
+                <div class="content-text">
+                </div>
+                <div class="content-text">
+
+                </div>
+
+            </div>
+
+        </main>
+
+        <footer>
+            Логинова Екатерина &copy
+        </footer>
+    </div>
+</body>
+
+</html>
