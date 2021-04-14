@@ -58,7 +58,7 @@
             </div>
 
             <div class="content">
-                <div class="title">Сборщик задач Gulp</div>
+                <div class="title">Сборщик задач Gulp <a href="https://github.com/katloginova/gulp-example" class="content-italic">(https://github.com/katloginova/gulp-example)</a></div>
 
                 <div class="content-text">
                    <p>
@@ -165,45 +165,210 @@
                     Теперь перейдем к конкретным задачам. Для начала зададим задачу для копирования статичных файлов из папки «src» в папку «dist» следующим образом:
                 </div>
 
-                <div class="content-italic">
-                    gulp.task('copy-html', ()=> {<br>
-                         return gulp.src('src/**/*.html'). <br>
-                            pipe(gulp.dest('dist/.')); <br>
-                    });
-                    
-                </div>
-
-
-
-
-                <h3 class="subtitle">Установка пакетов LESS и SCSS</h3>
-
-                <div class="content-text">
-
-                </div>
-
-
-
-                <div class="content-text">
-                </div>
-
-
-
-                <div class="content-text">
+                <div class="content-text" style="display: flex; justify-content: center;">
+                    <img class="img-small" src="../img/concpect/lesson18/copy.JPG" alt="copy" >
                 </div>
 
                 <div class="content-italic">
+                    gulp.task('default', gulp.series('copy-html', 'copy-images')); /выполняет поочередное копирование указанных папок/
+                </div>
+
+                <div class="content-text">
+                    Далее нам необходимо аналогично скопировать папки «styles», но при этом преобразовать файлы, находящиеся в исходной папке «src» с расширением «.scss» в файлы с расширение «.css», которые будут находится в результирующей папке «dist». Для этого установим модуль «gulp-sass»:
+                </div>
+
+                <div class="content-italic">
+                    npm i gulp-sass –save-dev
+                </div>
+
+                <div class="content-text">
+                    И после этого создадим задачу, преобразующую в другойформат, а затем копирующую в результирующую папку:
+                </div>
+
+                <div class="content-text">
+                    <img class="img-medium" src="../img/concpect/lesson18/sass.JPG" alt="sass" >
+                </div>
+
+                <div class="content-text">
+                    Для удобства создадим задачу, которая будет следить за изменениями в наших файлах проекта:
+                </div>
+
+                <div class="content-text">
+                    <img class="img-medium" src="../img/concpect/lesson18/watch.JPG" alt="watch">
+                </div>
+
+                <div class="content-italic">
+                    gulp.task('build', gulp.series('copy-html', 'copy-images', 'sass'));
                 </div>
                 <div class="content-italic">
+                    gulp.task('default', gulp.series('build', 'watch')); /выполняет сначала копирование файлов, а затем следит за их изменениями/
                 </div>
 
                 <div class="content-text">
+                    Установим модуль синхронизации с браузером «browser-sync», который не является модулем библиотеки «gulp», но очень хорошо совместим с этой библиотекой:
+                </div>
+
+                <div class="content-italic">
+                    npm i browser-sync –save-dev
                 </div>
 
                 <div class="content-text">
+                    После установки, как обычно создадим переменную, но при этом используем метод создания элемента поскольку «» не принадлежит библиотеки «gulp»:
+                </div>
+
+                <div class="content-italic">
+                    var browserSync =require('browser-sync').create(); 
+                </div>
+
+                <div class="content-text">
+                    После создадим следующую задачу, которая будет синхронизировать наш проект с браузером:
+                </div>
+
+                <div class="content-text" style="display: flex; justify-content: center;">
+                    <img class="img-small" src="../img/concpect/lesson18/sync.JPG" alt="sync">
+                </div>
+
+                <div class="content-italic">
+                    gulp.task('build', gulp.series('copy-html', 'copy-images', 'sass'));
+                </div>
+                <div class="content-italic">
+                    gulp.task('buid-watch', gulp.series('build', 'watch'));
+                </div>
+                <div class="content-italic">
+                    gulp.task('default', gulp.parallel('build-watch', 'sync'));
+                </div>
+
+                <div class="content-text">
+                    Но этого недостаточно, чтобы наш проект обновлялся с каждым нашим изменением. Для этого необходимо для всех существующих задач добавить еще одну операцию:
+                </div>
+                <div class="content-italic">
+                    .pipe(browserSync.stream());
+                </div>
+
+                <div class="content-text">
+                    Т.е. выглядить это должно следующим образом:
+                </div>
+                <div class="content-text" style="display: flex; justify-content: center;">
+                    <img class="img-small" src="../img/concpect/lesson18/copy-stream.JPG" alt="copy-stream">
+                </div>
+
+                <h3 class="subtitle">PostCSS</h3>
+
+                <div class="content-text">
+                    <span>PostCSS</span> – это библиотека, содержащая различные модули необходимые для обработки уже готового css-файла. Самыми распространенными плагинами «postcss» являются:
+                    <ul>
+                        <li>
+                            плагин, который минимизирует css-файл, убирая все пробелы из кода – <span>«cssnano»</span>
+                        </li>
+                        <li>
+                            плагин, который добавляет префиксы, где они необходимы, что более ранние версии браузеров поддерживали наш проект – <span>«autoprefixer»</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="content-text">
+                    Для установки всех необходимых модулей библиотеки «postcss» используем команду:
+                </div>
+                <div class="content-italic">
+                    npm i postcss –save-dev  /это отдельная библиотека, которая необходимо для того, чтобы работал модуль «gulp-postcss»/
+                </div>
+
+                <div class="content-italic">
+                    npm i gulp-postcss –save-dev  /это модуль «postcss» библиотеки «gulp»/
+                </div>
+
+                <div class="content-text">
+                    И все по старой схеме создаем переменную библиотеки «postcss»:
+                </div>
+
+                <div class="content-italic">
+                    var postcss = require('gulp-postcss');
+                </div>
+
+                <div class="content-text">
+                    И когда библиотека установлена можно устанавливать ее плагины необходимые для проекта, например, «cssnano»:
+                </div>
+                <div class="content-italic">
+                    npm i cssnano –save-dev
+                </div>
+
+                <div class="content-text">
+                    Создадим задачу, где переменная:
+                </div>
+
+                <div class="content-italic">
+                    var cssnano = require('cssnano');
+                </div>
+
+                <div class="content-text">
+                    а сама задача:
+                </div>
+                <div class="content-italic">
+                    var postcssPlugins = [cssnano()];
+                </div>
+
+                
+                <div class="content-text" style="display: flex; justify-content: center;">
+                    <img class="img-small" src="../img/concpect/lesson18/cssnano.JPG" alt="cssnano">
+                </div>
+
+
+                <div class="content-text">
+                    Установим плагин «autoprefixer» аналогичным образом:
+                </div>
+                <div class="content-italic">
+                    npm i autoprefixer –save-dev
+                </div>
+
+                <div class="content-text">
+                    Создадим переменную и добавим ее в ранее созданный массив «postcssPlugins» с плагинами библиотеки «postcss»:
+                </div>
+                <div class="content-italic">
+                    var autoprefix = require('autoprefixer');
+                </div>
+                <div class="content-italic">
+                    var postcssPlugins = [
+                        autoprefix(),
+                        cssnano()
+                    ];
+                </div>
+
+                <div class="content-text">
+                    Плагин «cssnano» лучше задавать в конце массива, поскольку он минимизирует css-файл.
                 </div>
                 <div class="content-text">
+                    Но для того, чтобы этот плагин работал необходимо указать под какие версии браузера он должен адаптировать минимизирует css-файл. Заходим на официальный сайт с документацией <a href="https://postcss.org/">https://postcss.org/</a>, выбираем вкладку «Plugins» и находим «autoprefixer». Где будет описано, как указывать версии браузера в файле «package.json», копируем и в вставляем в данный файл:
+                </div>
 
+                <div class="content-text" style="display: flex; justify-content: center;">
+                    <img class="img-small" src="../img/concpect/lesson18/brow-list.JPG" alt="brow-list">
+                </div>
+
+
+                <div class="content-text">
+                    Можно код немного упростить, указав на 3 последних версии. После чего «package.json» будет выглядеть:
+                </div>
+
+                <div class="content-text">
+                    <img class="img-medium" src="../img/concpect/lesson18/package_json.JPG" alt="package_json">
+                </div>
+
+                <div class="content-text">
+                    Для переименования файлов необходимо использовать плагин «gulp-rename»:
+                </div>
+                <div class="content-italic">
+                    npm i gulp-rename –save-dev
+                </div>
+                <div class="content-italic">
+                    var rename = require('gulp-rename');
+                </div>
+
+                <div class="content-text">
+                    <img class="img-medium" src="../img/concpect/lesson18/rename.JPG" alt="rename">
+                </div>
+
+                <div class="content-text">
+                    Еще один очень важный плагин «gulp-clean», который может помочь очисть результирующую папку проекта «dist» от ненужных файлов. Идея состоит в том, что мы сначала удаляем все содержимое данной папки, а затем копируем содержимое папки «src» в эту папку. И так при каждом изменение проекта. И все по старой схеме устанавливаем пакет, создаем переменную и задаем задачу для «gulp»:
                 </div>
 
             </div>
