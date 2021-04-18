@@ -27,28 +27,31 @@
     0%{
 
     }
-    12.5%{
+    11.11%{
         transform: translateY(-400px);
     }
-    25%{
+    22.22%{
         transform: translateY(-800px);
     }
-    37.5%{
+    33.33%{
         transform: translateY(-1200px);
     }
-    50%{
+    44.44%{
         transform: translateY(-1600px);
     }
-    62.5%{
+    55.55%{
         transform: translateY(-2000px);
     }
-    75%{
+    66.66%{
         transform: translateY(-2400px);
     }
-    87.5%{
+    77.77%{
         transform: translateY(-2800px);
     }
-    100%{
+    88.88%{
         transform: translateY(-3200px);
+    }
+    100%{
+        transform: translateY(-3600px);
     }
 }
